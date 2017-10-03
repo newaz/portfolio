@@ -9,17 +9,17 @@
         color: #333;
         font-weight: 300;
         &.heading-thistle-medium {
-            color: #cdb5cd;
+            color: $thistle-color-medium;
         }
     }
     & h2 {
         margin-bottom: 30px;
         font-weight: 300;
         &.heading-thistle-medium {
-            color: #cdb5cd;
+            color: $thistle-color-medium;
         }
         & span {
-            color: #8b7b8b;
+            color: $thistle-color-dark;
         }
     }
     & p {
@@ -29,7 +29,7 @@
         margin-bottom: 10px;
         color: #333;
         & span {
-            color: #cdb5cd;
+            color: $thistle-color-medium;
         }
         & a {
             color: tomato;

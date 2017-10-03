@@ -1,18 +1,17 @@
 .Home-content {
-    display: block;
     text-align: center;
     position: relative;
     width: 75%;
     margin: 0 auto 40px;
     & h1 {
-        color: #cdb5cd;
+        color: $thistle-color-medium;
         margin-bottom: 10px;
     }
     & h2 {
-        color: #cdb5cd;
+        color: $thistle-color-medium;
         margin-bottom: 30px;
         & span {
-            color: #8b7b8b;
+            color: $thistle-color-dark;
         }
     }
     & p {

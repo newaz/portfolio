@@ -3,9 +3,6 @@ import React from 'react';
 export const Home = () => {
 	return (
 		<div className="Home-content">
-			<div class="spacer">
-		    	&nbsp;
-			</div>
 			<div className="Home-profile">
 				<img src={'./images/profile-small.png'} className="Profile-image" alt="Profile image" />
 			</div>
