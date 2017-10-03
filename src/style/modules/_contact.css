@@ -1,4 +1,52 @@
 .Contact-content {
-    margin-top: 10%;
-    color: $mainBlack;
+    margin: 60px auto;
+    color: #333;
+    text-transform: lowercase;
+    &.contact-social {
+        & h2 {
+            text-transform: none !important;
+            margin-top: 75px;
+        }
+    }
+}
+
+.contact-social {
+    & li {
+        display: inline-block;
+        text-align: center;
+        margin: 40px auto 0;
+        padding: 0 12px;
+    }
+    & a {
+        color: tomato;
+        font-size: 20px;
+        @mixin atSmall {
+            font-size: 24px;
+        }
+    }
+    & img {
+        width: 35px;
+        @mixin atSmall {
+            width: 40px;
+        }
+
+    }
+}
+
+.contact-social, .email, .follow {
+    margin: 20px auto 60px;
+}
+
+.contribute {
+    margin: 20px auto 75px;
+}
+
+.contact-social h2,
+.email h2,
+.follow h2,
+.contribute h2 {
+    font-size: 24px;
+    @mixin atSmall {
+        font-size: 28px;
+    }
 }
