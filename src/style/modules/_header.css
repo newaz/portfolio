@@ -1,0 +1,16 @@
+.App-header {
+    max-height: 350px;
+    width: 100%;
+    font-family: 'Inconsolata', monospace;
+    @mixin atSmall {
+        background: transparent;
+    }
+}
+
+.App-image {
+    display: block;
+    max-height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
