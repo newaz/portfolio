@@ -56,7 +56,7 @@ export const Contact = () => (
 				</li>
 				<br />
 				<li>
-					<a href="https://dev.to/" target="_blank">The Practical Dev</a>
+					<a href="https://dev.to/letsbsocial1" target="_blank">The Practical Dev</a>
 				</li>
 			</div>
 		</div>
