@@ -31,10 +31,17 @@
         & span {
             color: #cdb5cd;
         }
+        & a {
+            color: tomato;
+            font-size: 20px;
+        }
     }
-    & a {
-        color: tomato;
-    }
+}
+
+a.resumeLink {
+    line-height: 1.7;
+    color: $darkOliveGreen4;
+    font-size: 20px;
 }
 
 .About-profile {
