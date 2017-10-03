@@ -8,18 +8,24 @@ li.universal-blog a {
 
 /* Mobile Hambuerger Styling */
 
-.hamburger {
+.topNavNarrow {
+    background: black;
+}
+
+i.hamburger {
     display: block;
     width: 36px;
     height: 30px;
-    padding: 15px 15px 15px 30px;
+    margin: 0 15px 15px 30px;
+    padding-top: 15px;
+    padding-bottom: 30px;
     position: sticky;
     left: 100vw;
     cursor: pointer;
     z-index: 99999;
 }
 
-.hamburger div.line {
+i.hamburger div.line {
     width: 100%;
     height: 6px;
     margin: 0 0 6px 0;
@@ -72,10 +78,6 @@ li.universal-blog a {
     }
 }
 
-.topNavNarrow {
-    background: black;
-}
-
 .topNarrowLinks {
     top: 0;
     left: 0;
@@ -105,15 +107,15 @@ li.universal-blog a {
         }
     }
 }
-
 .topNarrowLinks {
     &.show {
         opacity: 1;
-        transition: 0.5s ease-in-out, visibility 0.5s;
+        transition: background 0.5s ease-in-out, visibility 0.5s;
         display: block !important;
         height: auto;
         margin: 0 auto;
         padding-bottom: 12px;
+        background: black;
         & li {
             list-style-type: none;
             padding: 6px;
@@ -144,11 +146,11 @@ nav {
     @mixin atSmall {
         .topNavWide {
             display: block;
-            height: 50px;
+            height: 60px;
             & li {
                 display: inline-block;
                 float: right;
-                margin-top: 15px;
+                margin-top: 20px;
                 margin-right: 20px;
                 font-size: 20px;
                 & a {

@@ -1,9 +1,9 @@
 .Home-content {
+    display: block;
     text-align: center;
     position: relative;
     width: 75%;
     margin: 0 auto 40px;
-    text-transform: lowercase;
     & h1 {
         color: #cdb5cd;
         margin-bottom: 10px;
