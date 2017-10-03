@@ -1,5 +1,5 @@
 export const burgerToggle = () => {
-	const linksElem = document.querySelector('.topNavNarrow .topNarrowLinks');
+	const linksElem = document.querySelector('.topNarrowLinks');
 	const lines = document.querySelectorAll('.line');
 	lines[0].classList.toggle('animate0');
 	lines[1].classList.toggle('hide');
