@@ -5,12 +5,19 @@
     margin: 0 auto 40px;
     text-transform: lowercase;
     & h1 {
-        color: #cdb5cd;
         margin-bottom: 10px;
+        color: #333;
+        font-weight: 300;
+        &.heading-thistle-medium {
+            color: #cdb5cd;
+        }
     }
     & h2 {
-        color: #cdb5cd;
         margin-bottom: 30px;
+        font-weight: 300;
+        &.heading-thistle-medium {
+            color: #cdb5cd;
+        }
         & span {
             color: #8b7b8b;
         }
@@ -21,6 +28,12 @@
         margin-top: 5px;
         margin-bottom: 10px;
         color: #333;
+        & span {
+            color: #cdb5cd;
+        }
+    }
+    & a {
+        color: tomato;
     }
 }
 
