@@ -3,9 +3,6 @@ import {Header} from './components/Header';
 import {Main} from './components/Main';
 import {Footer} from './components/Footer';
 
-const spider = require('./images/spider.jpg');
-const profileSmall = require('./images/profile-small.png');
-
 class App extends Component {
 	render() {
 		return (

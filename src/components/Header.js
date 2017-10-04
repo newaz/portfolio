@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
+import NavLink from './nav_link';
 import{Main} from './Main';
 import {burgerToggle} from '../lib/navHelpers';
 
@@ -15,22 +16,22 @@ export const Header = () => (
 					<div className="line"></div>
 				</i>
 				<ul className="topNarrowLinks">
-					<li><Link to='/'>home</Link></li>
-					<li><Link to='/about'>about</Link></li>
-					<li><Link to='/work'>work</Link></li>
-					<li><Link to='/calendar'>ecal</Link></li>
-					<li><Link to='/skills'>skills</Link></li>
-					<li><Link to='/contact'>contact</Link></li>
+					<li><NavLink to='/'>home</NavLink></li>
+					<li><NavLink to='/about'>about</NavLink></li>
+					<li><NavLink to='/work'>work</NavLink></li>
+					<li><NavLink to='/calendar'>ecal</NavLink></li>
+					<li><NavLink to='/skills'>skills</NavLink></li>
+					<li><NavLink to='/contact'>contact</NavLink></li>
 				</ul>
 			</div>
 			<div className="topNavWide">
 				<ul className="topWideUl">
-					<li><Link to='/contact'>contact</Link></li>
-					<li><Link to='/skills'>skills</Link></li>
-					<li><Link to='/calendar'>ecal</Link></li>
-					<li><Link to='/work'>work</Link></li>
-					<li><Link to='/about'>about</Link></li>
-					<li><Link to='/'>home</Link></li>
+					<li><NavLink to='/contact'>contact</NavLink></li>
+					<li><NavLink to='/skills'>skills</NavLink></li>
+					<li><NavLink to='/calendar'>ecal</NavLink></li>
+					<li><NavLink to='/work'>work</NavLink></li>
+					<li><NavLink to='/about'>about</NavLink></li>
+					<li><NavLink to='/'>home</NavLink></li>
 				</ul>
 			</div>
 		</nav>
