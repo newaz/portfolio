@@ -6,14 +6,16 @@ import {Footer} from './components/Footer';
 class App extends Component {
 	render() {
 		return (
-			<div className="App">
-				<div className="App-header">
-					<Header />
+			<div className="App Site">
+				<div className="Site-content">
+					<div className="App-header">
+						<Header />
+					</div>
+					<div className="main">
+						<Main />
+					</div>
 				</div>
-				<div>
-					<Main />
-					<Footer />
-				</div>
+				<Footer />
 			</div>
 		);
 	}
