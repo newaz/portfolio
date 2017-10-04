@@ -11,24 +11,60 @@ export const Contact = () => (
 			<h2>Follow Me</h2>
 			<ul>
 				<li>
-					<a href="https://twitter.com/letsbsocial1" target="_blank">
-						<img className="twitter" src={'../images/icons/twitter.svg'} width="40" alt="twitter" />
-					</a>
+					<div className="icon-container">
+						<div className="icon">
+							<a href="https://twitter.com/letsbsocial1" target="_blank">
+								<div className="side">
+									<img className="twitter" src={'../images/icons/twitter.svg'} width="40" alt="twitter" />
+								</div>
+								<div className="side back">
+									<img className="twitter" src={'../images/icons/twitter.svg'} width="40" alt="twitter" />
+								</div>
+							</a>
+						</div>
+					</div>
 				</li>
 				<li>
-					<a href="https://github.com/interglobalmedia" target="_blank">
-						<img className="github" src={'../images/icons/github.svg'} width="40" alt="github" />
-					</a>
+					<div className="icon-container">
+						<div className="icon">
+							<a href="https://github.com/interglobalmedia" target="_blank">
+								<div className="side">
+									<img className="github" src={'../images/icons/github.svg'} width="40" alt="github" />
+								</div>
+								<div className="side back">
+									<img className="github" src={'../images/icons/github.svg'} width="40" alt="github" />
+								</div>
+							</a>
+						</div>
+					</div>
 				</li>
 				<li>
-					<a href="https://plus.google.com/u/0/110861192597778984723" target="_blank">
-						<img className="google-plus" src={'../images/icons/googleplus.svg'} width="35" alt="google plus" />
-					</a>
+					<div className="icon-container">
+						<div className="icon">
+							<a href="https://plus.google.com/u/0/110861192597778984723" target="_blank">
+								<div className="side">
+									<img className="google-plus" src={'../images/icons/googleplus.svg'} width="35" alt="google plus" />
+								</div>
+								<div className="side back">
+									<img className="google-plus" src={'../images/icons/googleplus.svg'} width="35" alt="google plus" />
+								</div>
+							</a>
+						</div>
+					</div>
 				</li>
 				<li>
-					<a href="https://www.linkedin.com/in/mariacampbell/" target="_blank">
-						<img className="linkedin" src={'../images/icons/linkedin.svg'} width="40" alt="linkedin" />
-					</a>
+					<div className="icon-container">
+						<div className="icon">
+							<a href="https://www.linkedin.com/in/mariacampbell/" target="_blank">
+								<div className="side">
+									<img className="linkedin" src={'../images/icons/linkedin.svg'} width="40" alt="linkedin" />
+								</div>
+								<div className="side back">
+									<img className="linkedin" src={'../images/icons/linkedin.svg'} width="40" alt="linkedin" />
+								</div>
+							</a>
+						</div>
+					</div>
 				</li>
 			</ul>
 			<div className="follow">

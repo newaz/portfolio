@@ -6,24 +6,60 @@ export const Footer = () => (
 			<div className='footer-social'>
 				<ul>
 					<li>
-						<a href="https://twitter.com/letsbsocial1">
-							<img className="twitter" src={'./images/icons/twitter.png'} width="40" alt="twitter" />
-						</a>
+						<div className="icon-container">
+							<div className="icon">
+								<a href="https://twitter.com/letsbsocial1">
+									<div className="side">
+										<img className="twitter" src={'./images/icons/twitter.png'} width="40" alt="twitter" />
+									</div>
+									<div className="side back">
+										<img className="twitter" src={'./images/icons/twitter.png'} width="40" alt="twitter" />
+									</div>
+								</a>
+							</div>
+						</div>
 					</li>
 					<li>
-						<a href="https://github.com/interglobalmedia">
-							<img className="github" src={'./images/icons/github.png'} width="40" alt="github" />
-						</a>
+						<div className="icon-container">
+							<div className="icon">
+								<a href="https://github.com/interglobalmedia">
+									<div className="side">
+										<img className="github" src={'./images/icons/github.png'} width="40" alt="github" />
+									</div>
+									<div className="side back">
+										<img className="github" src={'./images/icons/github.png'} width="40" alt="github" />
+									</div>
+								</a>
+							</div>
+						</div>
 					</li>
 					<li>
-						<a href="https://plus.google.com/u/0/110861192597778984723">
-							<img className="google-plus" src={'./images/icons/google.png'} width="35" alt="google plus" />
-						</a>
+						<div className="icon-container">
+							<div className="icon">
+								<a href="https://plus.google.com/u/0/110861192597778984723">
+									<div className="side">
+										<img className="google-plus" src={'./images/icons/google.png'} width="35" alt="google plus" />
+									</div>
+									<div className="side back">
+										<img className="google-plus" src={'./images/icons/google.png'} width="35" alt="google plus" />
+									</div>
+								</a>
+							</div>
+						</div>
 					</li>
 					<li>
-						<a href="https://www.linkedin.com/in/mariacampbell/">
-							<img className="linkedin" src={'./images/icons/linkedin_white_t.png'} width="40" alt="linkedin" />
-						</a>
+						<div className="icon-container">
+							<div className="icon">
+								<a href="https://www.linkedin.com/in/mariacampbell/">
+									<div className="side">
+										<img className="linkedin" src={'./images/icons/linkedin_white_t.png'} width="40" alt="linkedin" />
+									</div>
+									<div className="side back">
+										<img className="linkedin" src={'./images/icons/linkedin_white_t.png'} width="40" alt="linkedin" />
+									</div>
+								</a>
+							</div>
+						</div>
 					</li>
 				</ul>
 			</div>
