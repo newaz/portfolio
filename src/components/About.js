@@ -3,7 +3,7 @@ import React from 'react';
 export const About = () => (
 	<div className="About-content">
 		<div className="About-profile">
-			<img src={'./images/profile-small.png'} className="Profile-image" alt="Profile image" />
+			<img src={'../images/profile-small.png'} className="Profile-image" alt="Profile image" />
 		</div>
 		<h1 className="heading-thistle-medium">hi. i'm maria.</h1>
 		<h2 className="heading-thistle-medium">I am a <span>visual developer</span> and <span>problem solver</span>.</h2>

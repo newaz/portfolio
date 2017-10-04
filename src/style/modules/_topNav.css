@@ -6,6 +6,13 @@ li.universal-blog a {
     color: $darkOliveGreen1;
 }
 
+nav {
+    & li {
+        & a.active {
+            color: $darkOliveGreen1;
+        }
+    }
+}
 /* Mobile Hambuerger Styling */
 
 .topNavNarrow {
@@ -72,7 +79,7 @@ i.hamburger div.line {
 .topWideUl {
     & li {
         & a:hover {
-            color: $darkOliveGreen1;
+            color: $lightPink;
             display: block;
         }
     }
@@ -124,8 +131,11 @@ i.hamburger div.line {
                 text-decoration: none;
                 color: white;
                 &:hover {
-                    color: $darkOliveGreen1;
+                    color: $lightPink;
                 }
+                &.active {
+                   color: $darkOliveGreen1;
+               }
             }
         }
     }
@@ -142,6 +152,8 @@ a:-webkit-any-link {
 }
 /* End User Agent Stylesheet Styling */
 
+/* Wider Screens Styling > 675px */
+
 nav {
     @mixin atSmall {
         .topNavWide {
@@ -157,6 +169,9 @@ nav {
                     color: white;
                     text-decoration: none;
                     display: block;
+                    &.active {
+                        color: $darkOliveGreen1;
+                    }
                 }
             }
         }
