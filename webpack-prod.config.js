@@ -2,6 +2,8 @@ const path = require('path');
 const webpack = require('webpack');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const ClosureCompilerPlugin = require('webpack-closure-compiler');
 
 const TARGET_ENV = process.env.npm_lifecycle_event === 'build' ? 'production' : 'development';
 
@@ -85,15 +87,23 @@ module.exports = {
 		new ExtractTextPlugin({
 			filename: 'style.[contenthash:8].css',
 		}),
+		new OptimizeCSSAssetsPlugin({
+			assetNameRegExp: /\.optimize\.css$/g,
+			cssProcessor: require('cssnano'),
+			cssProcessorOptions: { discardComments: {removeAll: true} },
+			canPrint: true
+		}),
 		new webpack.DefinePlugin({
 			DEV: false,
 			'process.env.NODE_ENV': JSON.stringify('production')
 		}),
-		new webpack.DefinePlugin({
-			'process.env.COSMIC_BUCKET': JSON.stringify(process.env.COSMIC_BUCKET),
-			'process.env.COSMIC_READ_KEY': JSON.stringify(process.env.COSMIC_READ_KEY),
-			'process.env.COSMIC_WRITE_KEY':
-			JSON.stringify(process.env.COSMIC_WRITE_KEY)
+		new ClosureCompilerPlugin({
+			compiler: {
+				language_in: 'ECMASCRIPT6',
+				language_out: 'ECMASCRIPT5',
+				compilation_level: 'ADVANCED'
+			},
+			concurrency: 3,
 		})
 	],
 	devtool: 'source-map',

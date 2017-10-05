@@ -81,6 +81,7 @@ i.hamburger div.line {
         & a:hover {
             color: $lightPink;
             display: block;
+            animation: stretch 2s infinite ease-in-out;
         }
     }
 }

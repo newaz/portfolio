@@ -84,12 +84,6 @@ module.exports = {
 		}),
 		new webpack.DefinePlugin({
 			DEV: true
-		}),
-		new webpack.DefinePlugin({
-			'process.env.COSMIC_BUCKET': JSON.stringify(process.env.COSMIC_BUCKET),
-			'process.env.COSMIC_READ_KEY': JSON.stringify(process.env.COSMIC_READ_KEY),
-			'process.env.COSMIC_WRITE_KEY':
-			JSON.stringify(process.env.COSMIC_WRITE_KEY)
 		})
 	],
 	devtool: 'eval-source-map',

@@ -6,48 +6,24 @@ export const Footer = () => (
 			<div className='footer-social'>
 				<ul>
 					<li>
-						<div className="icon-container">
-							<div className="icon">
-								<a href="https://twitter.com/letsbsocial1">
-									<div className="side back">
-										<img className="footerTwitter" src={'./images/icons/twitter.png'} width="40" alt="twitter" />
-									</div>
-								</a>
-							</div>
-						</div>
+						<a href="https://twitter.com/letsbsocial1">
+							<img className="footerTwitter" src={'./images/icons/twitter.png'} width="40" alt="twitter" />
+						</a>
 					</li>
 					<li>
-						<div className="icon-container">
-							<div className="icon">
-								<a href="https://github.com/interglobalmedia">
-									<div className="side back">
-										<img className="footerGithub" src={'./images/icons/github.png'} width="40" alt="github" />
-									</div>
-								</a>
-							</div>
-						</div>
+						<a href="https://github.com/interglobalmedia">
+							<img className="footerGithub" src={'./images/icons/github.png'} width="40" alt="github" />
+						</a>
 					</li>
 					<li>
-						<div className="icon-container">
-							<div className="icon">
-								<a href="https://plus.google.com/u/0/110861192597778984723">
-									<div className="side back">
-										<img className="footerGoogleplus" src={'./images/icons/google.png'} width="35" alt="google plus" />
-									</div>
-								</a>
-							</div>
-						</div>
+						<a href="https://plus.google.com/u/0/110861192597778984723">
+							<img className="footerGoogleplus" src={'./images/icons/google.png'} width="35" alt="google plus" />
+						</a>
 					</li>
 					<li>
-						<div className="icon-container">
-							<div className="icon">
-								<a href="https://www.linkedin.com/in/mariacampbell/">
-									<div className="side back">
-										<img className="footerLinkedin" src={'./images/icons/linkedin_white_t.png'} width="40" alt="linkedin" />
-									</div>
-								</a>
-							</div>
-						</div>
+						<a href="https://www.linkedin.com/in/mariacampbell/">
+							<img className="footerLinkedin" src={'./images/icons/linkedin_white_t.png'} width="40" alt="linkedin" />
+						</a>
 					</li>
 				</ul>
 			</div>
