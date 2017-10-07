@@ -1,10 +1,10 @@
 import React from 'react';
 import Typist from 'react-typist';
 
-const linkedin = require('../images/icons/linkedin.svg');
-const googleplus = require('../images/icons/googleplus.svg');
-const github = require('../images/icons/github.svg');
-const twitter = require('../images/icons/twitter.svg');
+const linkedin = require('../../images/icons/linkedin.svg');
+const googleplus = require('../../images/icons/googleplus.svg');
+const github = require('../../images/icons/github.svg');
+const twitter = require('../../images/icons/twitter.svg');
 
 export const Contact = () => (
 	<div className="Contact-content">
@@ -13,22 +13,22 @@ export const Contact = () => (
 			<ul>
 				<li>
 					<a href="https://twitter.com/letsbsocial1" target="_blank">
-						<img className="twitter" src={'../images/icons/twitter.svg'} width="40" alt="twitter"/>
+						<img className="twitter" src={'../../images/icons/twitter.svg'} width="40" alt="twitter"/>
 					</a>
 				</li>
 				<li>
 					<a href="https://github.com/interglobalmedia" target="_blank">
-						<img className="github" src={'../images/icons/github.svg'} width="40" alt="github"/>
+						<img className="github" src={'../../images/icons/github.svg'} width="40" alt="github"/>
 					</a>
 				</li>
 				<li>
 					<a href="https://plus.google.com/u/0/110861192597778984723" target="_blank">
-						<img className="google-plus" src={'../images/icons/googleplus.svg'} width="40" alt="google plus"/>
+						<img className="google-plus" src={'../../images/icons/googleplus.svg'} width="40" alt="google plus"/>
 					</a>
 				</li>
 				<li>
 					<a href="https://www.linkedin.com/in/mariacampbell/" target="_blank">
-						<img className="linkedin" src={'../images/icons/linkedin.svg'} width="40" alt="linkedin"/>
+						<img className="linkedin" src={'../../images/icons/linkedin.svg'} width="40" alt="linkedin"/>
 					</a>
 				</li>
 			</ul>
