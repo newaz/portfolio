@@ -4,6 +4,7 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const TARGET_ENV = process.env.npm_lifecycle_event === 'build' ? 'production' : 'development';
 
@@ -22,7 +23,7 @@ module.exports = {
 	},
 	output: {
 		path: path.join(__dirname, 'dist'),
-		filename: '[name].[chunkhash:8].js'
+		filename: 'scripts/[name]-[chunkhash:8].js'
 	},
 	module: {
 		rules: [
@@ -52,18 +53,7 @@ module.exports = {
 				use: [
 					{
 						loader: 'url-loader',
-						options: { limit: 40000 }
-					},
-				]
-			},
-			{
-				test: /\.(jpg|png|gif|svg|ico)$/,
-				use: [
-					{
-						loader: 'file-loader',
-						options: {
-							name: '[name].[hash].[ext]',
-						},
+						options: { limit: 100000 }
 					},
 					'image-webpack-loader'
 				]
@@ -88,13 +78,19 @@ module.exports = {
 		new webpack.optimize.CommonsChunkPlugin({
 			name: 'runtime'
 		}),
-		new ExtractTextPlugin('style.[contenthash:8].css'),
+		new ExtractTextPlugin('style/style-[contenthash:8].css'),
 		new OptimizeCSSAssetsPlugin({
 			assetNameRegExp: /\.optimize\.css$/g,
 			cssProcessor: require('cssnano'),
 			cssProcessorOptions: { discardComments: {removeAll: true} },
 			canPrint: true
 		}),
+		new CopyWebpackPlugin([
+			{
+				from: 'src/images',
+				to: 'images'
+			}
+		]),
 		new webpack.DefinePlugin({
 			DEV: false,
 			'process.env': {

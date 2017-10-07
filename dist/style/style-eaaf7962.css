@@ -102,7 +102,7 @@ i.hamburger div.line {
       display: block;
       float: none; }
 
-.topNarrowLinks .show {
+.topNarrowLinks.show {
   opacity: 1;
   transition: background 0.5s ease-in-out, visibility 0.5s;
   display: block !important;
@@ -110,17 +110,17 @@ i.hamburger div.line {
   margin: 0 auto;
   padding-bottom: 12px;
   background: black; }
-  .topNarrowLinks .show li {
+  .topNarrowLinks.show li {
     list-style-type: none;
     padding: 6px;
     font-size: 20px; }
-    .topNarrowLinks .show li a {
+    .topNarrowLinks.show li a {
       text-decoration: none;
       color: white; }
-      .topNarrowLinks .show li a :hover {
-        color: #ffb6c1; }
-      .topNarrowLinks .show li a .active {
-        color: #caff70; }
+    .topNarrowLinks.show li a:hover {
+      color: #ffb6c1; }
+    .topNarrowLinks.show li a.active {
+      color: #caff70; }
 
 .active {
   color: #caff70; }
@@ -628,4 +628,4 @@ img.footerLinkedin:hover {
 .Typist .Cursor {
   display: none; }
 
-/*# sourceMappingURL=style.026edcd9.css.map*/
+/*# sourceMappingURL=style-eaaf7962.css.map*/
