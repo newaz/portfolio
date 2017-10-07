@@ -30,17 +30,20 @@ module.exports = {
 				use: {
 					loader: 'babel-loader',
 					options: {
-						presets: ['env', 'stage-1', 'stage-2', 'jest', 'react']
+						presets: ['env', 'react', 'stage-1', 'stage-2', 'jest']
 					}
 				},
 				exclude: /node_modules/
 			},
 			{
-				test: /\.css$/,
-				use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
-					fallback: 'style-loader',
-					use: ['css-loader', 'postcss-loader']
-				})),
+				test: /\.scss$/,
+				use: [{
+					loader: 'style-loader'
+				}, {
+					loader: 'css-loader'
+				}, {
+					loader:'sass-loader'
+				}],
 			},
 			{
 				test: /\.(jpg|png|gif|svg|ico)$/,
@@ -78,9 +81,6 @@ module.exports = {
 		}),
 		new webpack.optimize.CommonsChunkPlugin({
 			name: 'runtime'
-		}),
-		new ExtractTextPlugin({
-			filename: 'style[contenthash:8].css',
 		}),
 		new webpack.DefinePlugin({
 			DEV: true

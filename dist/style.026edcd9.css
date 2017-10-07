@@ -234,16 +234,20 @@ a.resumeLink {
   text-align: center;
   margin: 40px auto 0;
   padding: 0 12px; }
+
 .contact-social li:hover, .contact-social li:focus {
   animation: stretch 2s infinite ease-in-out; }
+
 .contact-social a {
   color: tomato;
   font-size: 20px; }
   @media all and (min-width: 675px) {
     .contact-social a {
       font-size: 24px; } }
+
 .contact-social a:hover {
   color: #1874cd; }
+
 .contact-social img {
   width: 35px; }
   @media all and (min-width: 675px) {
@@ -287,6 +291,7 @@ img.linkedin:hover {
     transform: scale(1); }
   to {
     transform: scale(1.1); } }
+
 .Calendar-content {
   margin-top: 10%;
   color: black; }
@@ -338,9 +343,11 @@ img.linkedin:hover {
     width: 0; }
   to {
     width: 95%; } }
+
 .ability-html5:before {
   content: "95%";
   left: 95%; }
+
 .ability-html5:after {
   animation: show-ability-html5 ease-in-out 2s 0.5s 1;
   animation-fill-mode: forwards; }
@@ -350,9 +357,11 @@ img.linkedin:hover {
     width: 0; }
   to {
     width: 95%; } }
+
 .ability-css3:before {
   content: "95%";
   left: 95%; }
+
 .ability-css3:after {
   animation: show-ability-css3 ease-in-out 2s 0.5s 1;
   animation-fill-mode: forwards; }
@@ -362,9 +371,11 @@ img.linkedin:hover {
     width: 0; }
   to {
     width: 90%; } }
+
 .ability-postcss:before {
   content: "90%";
   left: 90%; }
+
 .ability-postcss:after {
   animation: show-ability-postcss ease-in-out 2s 0.5s 1;
   animation-fill-mode: forwards; }
@@ -374,9 +385,11 @@ img.linkedin:hover {
     width: 0; }
   to {
     width: 90%; } }
+
 .ability-sass:before {
   content: "90%";
   left: 90%; }
+
 .ability-sass:after {
   animation: show-ability-sass ease-in-out 2s 0.5s 1;
   animation-fill-mode: forwards; }
@@ -386,9 +399,11 @@ img.linkedin:hover {
     width: 0; }
   to {
     width: 80%; } }
+
 .ability-javascript:before {
   content: "80%";
   left: 80%; }
+
 .ability-javascript:after {
   animation: show-ability-javascript ease-in-out 2s 0.5s 1;
   animation-fill-mode: forwards; }
@@ -398,9 +413,11 @@ img.linkedin:hover {
     width: 0; }
   to {
     width: 50%; } }
+
 .ability-react:before {
   content: "50%";
   left: 50%; }
+
 .ability-react:after {
   animation: show-ability-react ease-in-out 2s 0.5s 1;
   animation-fill-mode: forwards; }
@@ -410,9 +427,11 @@ img.linkedin:hover {
     width: 0; }
   to {
     width: 85%; } }
+
 .ability-npm:before {
   content: "85%";
   left: 85%; }
+
 .ability-npm:after {
   animation: show-ability-npm ease-in-out 2s 0.5s 1;
   animation-fill-mode: forwards; }
@@ -422,9 +441,11 @@ img.linkedin:hover {
     width: 0; }
   to {
     width: 60%; } }
+
 .ability-node-js:before {
   content: "60%";
   left: 60%; }
+
 .ability-node-js:after {
   animation: show-ability-node-js ease-in-out 2s 0.5s 1;
   animation-fill-mode: forwards; }
@@ -434,9 +455,11 @@ img.linkedin:hover {
     width: 0; }
   to {
     width: 85%; } }
+
 .ability-git:before {
   content: "85%";
   left: 85%; }
+
 .ability-git:after {
   animation: show-ability-git ease-in-out 2s 0.5s 1;
   animation-fill-mode: forwards; }
@@ -446,9 +469,11 @@ img.linkedin:hover {
     width: 0; }
   to {
     width: 95%; } }
+
 .ability-static:before {
   content: "95%";
   left: 95%; }
+
 .ability-static:after {
   animation: show-ability-static ease-in-out 2s 0.5s 1;
   animation-fill-mode: forwards; }
@@ -458,9 +483,11 @@ img.linkedin:hover {
     width: 0; }
   to {
     width: 85%; } }
+
 .ability-command-line:before {
   content: "85%";
   left: 85%; }
+
 .ability-command-line:after {
   animation: show-ability-command-line ease-in-out 2s 0.5s 1;
   animation-fill-mode: forwards; }
@@ -470,9 +497,11 @@ img.linkedin:hover {
     width: 0; }
   to {
     width: 90%; } }
+
 .ability-markdown:before {
   content: "90%";
   left: 90%; }
+
 .ability-markdown:after {
   animation: show-ability-markdown ease-in-out 2s 0.5s 1;
   animation-fill-mode: forwards; }
@@ -482,9 +511,11 @@ img.linkedin:hover {
     width: 0; }
   to {
     width: 85%; } }
+
 .ability-technical-writing:before {
   content: "85%";
   left: 85%; }
+
 .ability-technical-writing:after {
   animation: show-ability-technical-writing ease-in-out 2s 0.5s 1;
   animation-fill-mode: forwards; }
@@ -494,9 +525,11 @@ img.linkedin:hover {
     width: 0; }
   to {
     width: 95%; } }
+
 .ability-photoshop:before {
   content: "95%";
   left: 95%; }
+
 .ability-photoshop:after {
   animation: show-ability-photoshop ease-in-out 2s 0.5s 1;
   animation-fill-mode: forwards; }
@@ -506,9 +539,11 @@ img.linkedin:hover {
     width: 0; }
   to {
     width: 95%; } }
+
 .ability-illustrator:before {
   content: "95%";
   left: 95%; }
+
 .ability-illustrator:after {
   animation: show-ability-illustrator ease-in-out 2s 0.5s 1;
   animation-fill-mode: forwards; }
@@ -518,9 +553,11 @@ img.linkedin:hover {
     width: 0; }
   to {
     width: 100%; } }
+
 .ability-digital-photography:before {
   content: "100%";
   left: 100%; }
+
 .ability-digital-photography:after {
   animation: show-ability-digital-photography ease-in-out 2s 0.5s 1;
   animation-fill-mode: forwards; }
@@ -530,9 +567,11 @@ img.linkedin:hover {
     width: 0; }
   to {
     width: 100%; } }
+
 .ability-keynote:before {
   content: "100%";
   left: 100%; }
+
 .ability-keynote:after {
   animation: show-ability-keynote ease-in-out 2s 0.5s 1;
   animation-fill-mode: forwards; }
@@ -580,7 +619,7 @@ img.footerLinkedin:hover {
   width: 100%; }
 
 .Site-content:after {
-  content: '\00a0';
+  content: '\A0';
   display: block;
   margin-top: var(--space);
   height: 0;
@@ -589,4 +628,4 @@ img.footerLinkedin:hover {
 .Typist .Cursor {
   display: none; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.026edcd9.css.map*/

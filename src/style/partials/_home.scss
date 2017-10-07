@@ -1,20 +1,19 @@
 .Home-content {
-    text-align: center;
     position: relative;
     width: 75%;
     margin: 0 auto 40px;
-    & h1 {
+    h1 {
         color: $thistle-color-medium;
         margin-bottom: 10px;
     }
-    & h2 {
+    h2 {
         color: $thistle-color-medium;
         margin-bottom: 30px;
-        & span {
+        span {
             color: $thistle-color-dark;
         }
     }
-    & p {
+    p {
         font-size: 20px;
         line-height: 1.3;
         margin-top: 5px;
@@ -24,7 +23,7 @@
 }
 
 .Home-profile {
-    & .Profile-image {
+    .Profile-image {
         display: block;
         height: 200px;
         width: 200px;

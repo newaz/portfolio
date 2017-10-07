@@ -2,10 +2,10 @@
     padding: 2em 0;
     color: $mainWhite;
     background: $mainBlack;
-    & div.footer-social {
+    div.footer-social {
         text-align: center;
         width: 100%;
-        & li {
+        li {
             display: inline-block;
             margin-top: 40px;
             margin-left: 12px;
@@ -19,17 +19,15 @@
     width: 100%;
     margin: 50px auto -10px;
     color: $mainWhite;
-    & p {
+    p {
         color: $mainWhite;
         font-size: 20px;
     }
 }
 
-img.footerTwitter,
-img.footerGithub,
-img.footerGoogleplus,
-img.footerLinkedin {
-    &:hover {
-        animation: stretch 2s infinite ease-in-out;
-    }
+img.footerTwitter:hover,
+img.footerGithub:hover,
+img.footerGoogleplus:hover,
+img.footerLinkedin:hover {
+    animation: stretch 2s infinite ease-in-out;
 }
