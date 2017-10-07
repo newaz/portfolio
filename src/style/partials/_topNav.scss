@@ -7,8 +7,8 @@ li.universal-blog a {
 }
 
 nav {
-    & li {
-        & a.active {
+    li {
+        a.active {
             color: $darkOliveGreen1;
         }
     }
@@ -65,20 +65,20 @@ i.hamburger div.line {
 }
 
 .topWideUl {
-    & li {
+    li {
         color: white;
         text-decoration: none;
         padding: 0 6px;
         height: 20px;
-        & a.active {
+        a.active {
             display: block;
         }
     }
 }
 
 .topWideUl {
-    & li {
-        & a:hover {
+    li {
+        a:hover {
             color: $lightPink;
             display: block;
             animation: stretch 2s infinite ease-in-out;
@@ -109,14 +109,14 @@ i.hamburger div.line {
 
     ul.topNarrowLinks {
         display: none;
-        & li {
+        li {
             display: block;
             float: none;
         }
     }
 }
 .topNarrowLinks {
-    &.show {
+    .show {
         opacity: 1;
         transition: background 0.5s ease-in-out, visibility 0.5s;
         display: block !important;
@@ -124,17 +124,17 @@ i.hamburger div.line {
         margin: 0 auto;
         padding-bottom: 12px;
         background: black;
-        & li {
+        li {
             list-style-type: none;
             padding: 6px;
             font-size: 20px;
-            & a {
+            a {
                 text-decoration: none;
                 color: white;
-                &:hover {
+                :hover {
                     color: $lightPink;
                 }
-                &.active {
+                .active {
                    color: $darkOliveGreen1;
                }
             }
@@ -156,21 +156,21 @@ a:-webkit-any-link {
 /* Wider Screens Styling > 675px */
 
 nav {
-    @mixin atSmall {
+    @include respond-to($atSmall) {
         .topNavWide {
             display: block;
             height: 60px;
-            & li {
+            li {
                 display: inline-block;
                 float: right;
                 margin-top: 20px;
                 margin-right: 20px;
                 font-size: 20px;
-                & a {
+                a {
                     color: white;
                     text-decoration: none;
                     display: block;
-                    &.active {
+                    .active {
                         color: $darkOliveGreen1;
                     }
                 }
@@ -181,4 +181,10 @@ nav {
         }
     }
 
+}
+
+/* Get rid of original nav link label because duplicate is created with addition of active class in CustomNavLink Component in the Header Component */
+.active a,
+.topNavWide li .active a {
+    display: none;
 }

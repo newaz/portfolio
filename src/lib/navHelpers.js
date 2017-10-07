@@ -6,3 +6,8 @@ export const burgerToggle = () => {
 	lines[2].classList.toggle('animate2');
 	linksElem.classList.toggle('show');
 }
+
+export const menuLinkClick = (e) => {
+	e.stopPropagatin();
+	e.nativeEvent.stopImmediatePropagation();
+}

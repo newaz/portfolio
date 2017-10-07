@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const ClosureCompilerPlugin = require('webpack-closure-compiler');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const TARGET_ENV = process.env.npm_lifecycle_event === 'build' ? 'production' : 'development';
 
@@ -31,17 +31,21 @@ module.exports = {
 				use: {
 					loader: 'babel-loader',
 					options: {
-						preset: ['env', 'stage-1', 'stage-2', 'jest', 'react']
+						presets: ['env', 'react', 'stage-1', 'stage-2', 'jest']
 					}
 				},
 				exclude: /node_modules/
 			},
 			{
-				test: /\.css$/,
-				use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
+				test: /\.scss$/,
+				use: ExtractTextPlugin.extract({
 					fallback: 'style-loader',
-					use: ['css-loader', 'postcss-loader']
-				})),
+					use: [{
+						loader: 'css-loader'
+					}, {
+						loader:'sass-loader'
+					}],
+				}),
 			},
 			{
 				test: /\.(jpg|png|gif|svg|ico)$/,
@@ -58,7 +62,7 @@ module.exports = {
 					{
 						loader: 'file-loader',
 						options: {
-							name: '[path][name].[hash].[ext]',
+							name: '[name].[hash].[ext]',
 						},
 					},
 					'image-webpack-loader'
@@ -84,9 +88,7 @@ module.exports = {
 		new webpack.optimize.CommonsChunkPlugin({
 			name: 'runtime'
 		}),
-		new ExtractTextPlugin({
-			filename: 'style.[contenthash:8].css',
-		}),
+		new ExtractTextPlugin('style.[contenthash:8].css'),
 		new OptimizeCSSAssetsPlugin({
 			assetNameRegExp: /\.optimize\.css$/g,
 			cssProcessor: require('cssnano'),
@@ -95,15 +97,12 @@ module.exports = {
 		}),
 		new webpack.DefinePlugin({
 			DEV: false,
-			'process.env.NODE_ENV': JSON.stringify('production')
+			'process.env': {
+				NODE_ENV: JSON.stringify('production')
+			}
 		}),
-		new ClosureCompilerPlugin({
-			compiler: {
-				language_in: 'ECMASCRIPT6',
-				language_out: 'ECMASCRIPT5',
-				compilation_level: 'ADVANCED'
-			},
-			concurrency: 3,
+		new webpack.optimize.UglifyJsPlugin({
+			sourceMap: true
 		})
 	],
 	devtool: 'source-map',

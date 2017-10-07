@@ -9,7 +9,7 @@ const twitter = require('../images/icons/twitter.svg');
 export const Contact = () => (
 	<div className="Contact-content">
 		<div className="contact-social">
-			<h2>Follow me</h2>
+			<h2 className="title-social">Follow me</h2>
 			<ul>
 				<li>
 					<a href="https://twitter.com/letsbsocial1" target="_blank">
@@ -45,13 +45,13 @@ export const Contact = () => (
 				</li>
 			</div>
 			<div className="email">
-				<h2>Email</h2>
+				<h2 className="title-social">Email</h2>
 				<li>
 					<a href="mailto:interglobalmedia@gmail.com">interglobalmedia@gmail.com</a>
 				</li>
 			</div>
 			<div className="contribute">
-				<h2>Contributor to</h2>
+				<h2 className="title-social">Contributor to</h2>
 				<li>
 					<a href="https://blog.hellojs.org/" trget="_blank">hello.js</a>
 				</li>

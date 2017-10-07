@@ -1,0 +1,7 @@
+$atSmall: '(min-width: 675px)';
+
+@mixin respond-to($media) {
+    @media all and #{$media} {
+        @content;
+    }
+}
