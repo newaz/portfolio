@@ -23,7 +23,7 @@ module.exports = {
 	},
 	output: {
 		path: path.join(__dirname, 'dist'),
-		filename: 'scripts/[name]-[chunkhash:8].js'
+		filename: '[name]-[chunkhash:8].js'
 	},
 	module: {
 		rules: [
@@ -67,7 +67,7 @@ module.exports = {
 	plugins: [
 		new htmlWebpackPlugin({
 			template: 'src/index.html',
-			favicon: 'src/images/favicon.ico',
+			favicon: 'src/components/images/favicon.ico',
 			inject: true
 		}),
 		new webpack.HashedModuleIdsPlugin(),
@@ -78,7 +78,7 @@ module.exports = {
 		new webpack.optimize.CommonsChunkPlugin({
 			name: 'runtime'
 		}),
-		new ExtractTextPlugin('style/style-[contenthash:8].css'),
+		new ExtractTextPlugin('style-[contenthash:8].css'),
 		new OptimizeCSSAssetsPlugin({
 			assetNameRegExp: /\.optimize\.css$/g,
 			cssProcessor: require('cssnano'),
@@ -87,7 +87,7 @@ module.exports = {
 		}),
 		new CopyWebpackPlugin([
 			{
-				from: 'src/images',
+				from: 'src/components/images',
 				to: 'images'
 			}
 		]),
