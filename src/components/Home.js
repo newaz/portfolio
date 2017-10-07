@@ -1,10 +1,11 @@
 import React from 'react';
+const profileSmall = require('../images/profileSmall.png');
 
 export const Home = () => {
 	return (
 		<div className="Home-content">
 			<div className="Home-profile">
-				<img src={'./images/profile-small.png'} className="Profile-image" alt="Profile image" />
+				<img src={'../images/profileSmall.png'} className="Profile-image" alt="Profile image" />
 			</div>
 			<h1>hi. i'm maria.</h1>
 			<h2>I am a <span>visual developer</span> and <span>problem solver</span>.</h2>

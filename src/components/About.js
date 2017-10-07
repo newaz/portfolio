@@ -1,10 +1,11 @@
 import React from 'react';
 import Typist from 'react-typist';
+const profileSmall = require('../images/profileSmall.png');
 
 export const About = () => (
 	<div className="About-content">
 		<div className="About-profile">
-			<img src={'../images/profile-small.png'} className="Profile-image" alt="Profile image" />
+			<img src={'../images/profileSmall.png'} className="Profile-image" alt="Profile image" />
 		</div>
 		<Typist>
 			<h1 className="heading-thistle-medium">hi. i'm maria.</h1>
