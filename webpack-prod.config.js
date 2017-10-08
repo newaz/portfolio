@@ -53,7 +53,7 @@ module.exports = {
 					{
 						loader: 'file-loader',
 						options: {
- 							name: 'images/[name]-[hash:8].[ext]',
+ 							name: '[path][name]-[hash:8].[ext]'
 						},
 					},
 				]
