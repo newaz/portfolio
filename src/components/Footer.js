@@ -1,9 +1,9 @@
 import React from 'react';
 
-import footerTwitter from './images/icons/footerTwitter.png';
-import footerGithub from './images/icons/footerGithub.png';
-import footerGoogle from './images/icons/footerGoogle.png';
-import footerLinkedin from './images/icons/footerLinkedin.png';
+import footerTwitter from '../images/icons/footerTwitter.png';
+import footerGithub from '../images/icons/footerGithub.png';
+import footerGoogle from '../images/icons/footerGoogle.png';
+import footerLinkedin from '../images/icons/footerLinkedin.png';
 
 export const Footer = () => (
 	<footer className='site-footer'>

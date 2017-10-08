@@ -1,10 +1,10 @@
 import React from 'react';
 import Typist from 'react-typist';
 
-import linkedin from './images/icons/linkedin.svg';
-import googleplus from './images/icons/googleplus.svg';
-import github from './images/icons/github.svg';
-import twitter from './images/icons/twitter.svg';
+import linkedin from '../images/icons/linkedin.svg';
+import googleplus from '../images/icons/googleplus.svg';
+import github from '../images/icons/github.svg';
+import twitter from '../images/icons/twitter.svg';
 
 export const Contact = () => (
 	<div className="Contact-content">

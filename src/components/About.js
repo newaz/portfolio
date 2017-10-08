@@ -1,6 +1,7 @@
 import React from 'react';
 import Typist from 'react-typist';
-import profileSmall from './images/profileSmall.png';
+import profileSmall from '../images/profileSmall.png';
+import mdcResume8217 from '../images/resume/mdcResume8217.pdf';
 
 export const About = () => (
 	<div className="About-content">
@@ -34,6 +35,6 @@ export const About = () => (
 		<p>
 			<a href="https://javascript30.com/" target="_blank">JavaScript30.com</a>, <a href="https://learnnode.com/" target="_blank">Learn Node</a>, <a href="https://reactforbeginners.com/" target="_blank">React For Beginners</a>, <a href="https://es6.io/" target="_blank">ES6 For Everyone</a>, <a href="https://egghead.io/" target="_blank">egghead.io</a>, <a href="https://www.udemy.com/" target="_blank">Udemy.com</a>, <a href="https://stackoverflow.com/" target="_blank">StackOverflow</a>, <a href="https://css-tricks.com/" target="_blank">CSS Tricks</a>, <a href="https://university.mongodb.com/" target="_blank">MongoDB University</a>, NY JavaScript Slack Channel, GDI NYC Slack Channel, NYCDA Slack Channel, WesBos Slack Channel(s), <a href="https://github.com/" target="_blank">Github.com</a>, <a href="https://teamtreehouse.com/" target="_blank">Treehouse.com</a>
 		</p>
-		<a href="./images/resume/mdc-updated-resume-8-2-17.pdf" className="resumeLink" download="mdc-updated-resume-8-2-17.pdf">download resume</a>
+		<a href={mdcResume8217} className="resumeLink" download={mdcResume8217}>download resume</a>
 	</div>
 )

@@ -4,7 +4,6 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const TARGET_ENV = process.env.npm_lifecycle_event === 'build' ? 'production' : 'development';
 
@@ -49,13 +48,15 @@ module.exports = {
 				}),
 			},
 			{
-				test: /\.(jpg|png|gif|svg|ico)$/,
+				test: /\.(jpg|png|gif|svg|pdf|ico)$/,
 				use: [
 					{
-						loader: 'url-loader',
-						options: { limit: 100000 }
+						loader: 'file-loader',
+						options: {
+ 							name: '[path][name]-[hash:8].[ext]',
+							context: ''
+						},
 					},
-					'image-webpack-loader'
 				]
 			},
 		]
@@ -67,7 +68,7 @@ module.exports = {
 	plugins: [
 		new htmlWebpackPlugin({
 			template: 'src/index.html',
-			favicon: 'src/components/images/favicon.ico',
+			favicon: 'src/favicon.ico',
 			inject: true
 		}),
 		new webpack.HashedModuleIdsPlugin(),
@@ -78,19 +79,13 @@ module.exports = {
 		new webpack.optimize.CommonsChunkPlugin({
 			name: 'runtime'
 		}),
-		new ExtractTextPlugin('style-[contenthash:8].css'),
+		new ExtractTextPlugin('style/style-[contenthash:8].css'),
 		new OptimizeCSSAssetsPlugin({
 			assetNameRegExp: /\.optimize\.css$/g,
 			cssProcessor: require('cssnano'),
 			cssProcessorOptions: { discardComments: {removeAll: true} },
 			canPrint: true
 		}),
-		new CopyWebpackPlugin([
-			{
-				from: 'src/components/images',
-				to: 'images'
-			}
-		]),
 		new webpack.DefinePlugin({
 			DEV: false,
 			'process.env': {

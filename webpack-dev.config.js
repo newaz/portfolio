@@ -46,12 +46,13 @@ module.exports = {
 				}],
 			},
 			{
-				test: /\.(jpg|png|gif|svg|ico)$/,
+				test: /\.(pdf|jpg|png|gif|svg|ico)$/,
 				use: [
 					{
 						loader: 'url-loader',
 						options: { limit: 100000 }
 					},
+					'image-webpack-loader'
 				]
 			},
 		]
@@ -59,7 +60,7 @@ module.exports = {
 	plugins: [
 		new htmlWebpackPlugin({
 			template: 'src/index.html',
-			favicon: 'src/components/images/favicon.ico',
+			favicon: 'src/favicon.ico',
 			inject: true
 		}),
 		new webpack.NamedModulesPlugin(),
