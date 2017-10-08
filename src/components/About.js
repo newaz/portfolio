@@ -1,7 +1,7 @@
 import React from 'react';
 import Typist from 'react-typist';
 import profileSmall from '../images/profileSmall.png';
-import mdcResume8217 from '../images/resume/mdcResume8217.pdf';
+import mdcResume8217 from '../images/mdcResume8217.pdf';
 
 export const About = () => (
 	<div className="About-content">

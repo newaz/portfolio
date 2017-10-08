@@ -22,7 +22,7 @@ module.exports = {
 	},
 	output: {
 		path: path.join(__dirname, 'dist'),
-		filename: '[name]-[chunkhash:8].js'
+		filename: 'scripts/[name]-[chunkhash:8].js'
 	},
 	module: {
 		rules: [
@@ -53,8 +53,7 @@ module.exports = {
 					{
 						loader: 'file-loader',
 						options: {
- 							name: '[path][name]-[hash:8].[ext]',
-							context: ''
+ 							name: 'images/[name]-[hash:8].[ext]',
 						},
 					},
 				]
