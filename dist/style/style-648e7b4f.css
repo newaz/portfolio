@@ -299,6 +299,11 @@ img.linkedin:hover {
 .Work-content {
   margin-top: 10%;
   color: black; }
+  .Work-content h2 {
+    text-transform: lowercase; }
+  .Work-content a {
+    font-size: 20px;
+    color: #6e8b3d; }
 
 /* Ability */
 .Skills-content {
@@ -420,6 +425,20 @@ img.linkedin:hover {
 
 .ability-react:after {
   animation: show-ability-react ease-in-out 2s 0.5s 1;
+  animation-fill-mode: forwards; }
+
+@keyframes show-ability-webpack {
+  from {
+    width: 0; }
+  to {
+    width: 50%; } }
+
+.ability-webpack:before {
+  content: "50%";
+  left: 50%; }
+
+.ability-webpack:after {
+  animation: show-ability-webpack ease-in-out 2s 0.5s 1;
   animation-fill-mode: forwards; }
 
 @keyframes show-ability-npm {
@@ -628,4 +647,4 @@ img.footerLinkedin:hover {
 .Typist .Cursor {
   display: none; }
 
-/*# sourceMappingURL=style-eaaf7962.css.map*/
+/*# sourceMappingURL=style-648e7b4f.css.map*/
