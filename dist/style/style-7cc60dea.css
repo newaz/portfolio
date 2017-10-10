@@ -14,13 +14,6 @@ body {
 .App {
   text-align: center; }
 
-li.universal-blog a {
-  text-align: left;
-  float: left;
-  font-family: 'Inconsolata', monospace;
-  margin-left: 10px;
-  color: #caff70; }
-
 nav li a.active {
   color: #caff70; }
 
@@ -296,9 +289,38 @@ img.linkedin:hover {
   margin-top: 10%;
   color: black; }
 
-.Work-content {
-  margin-top: 10%;
-  color: black; }
+.project-list {
+  @extends %clearfix;
+  width: 100%;
+  columns: 3;
+  list-style-position: inside;
+  padding: 0;
+  list-style: none;
+  margin: 0 auto; }
+
+.project-list {
+  padding: 0 1em;
+  text-align: center; }
+  .project-list .project {
+    margin-bottom: 5px; }
+
+.project-caption {
+  margin-top: 0.5em;
+  font-size: 20px; }
+
+.project-tags {
+  margin-left: 1em; }
+  .project-tags li {
+    display: inline; }
+    .project-tags li a {
+      color: #6e8b3d; }
+      .project-tags li a:hover {
+        color: blue;
+        transition: 0.7s; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle; }
 
 /* Ability */
 .Skills-content {
@@ -420,6 +442,20 @@ img.linkedin:hover {
 
 .ability-react:after {
   animation: show-ability-react ease-in-out 2s 0.5s 1;
+  animation-fill-mode: forwards; }
+
+@keyframes show-ability-webpack {
+  from {
+    width: 0; }
+  to {
+    width: 50%; } }
+
+.ability-webpack:before {
+  content: "50%";
+  left: 50%; }
+
+.ability-webpack:after {
+  animation: show-ability-webpack ease-in-out 2s 0.5s 1;
   animation-fill-mode: forwards; }
 
 @keyframes show-ability-npm {
@@ -628,4 +664,4 @@ img.footerLinkedin:hover {
 .Typist .Cursor {
   display: none; }
 
-/*# sourceMappingURL=style-eaaf7962.css.map*/
+/*# sourceMappingURL=style-7cc60dea.css.map*/

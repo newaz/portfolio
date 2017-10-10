@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {HashRouter as Router, Route, Link} from 'react-router-dom';
+import React from 'react';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import {burgerToggle} from '../lib/navHelpers';
 import {Home} from './Home';
 import {About} from './About';
@@ -33,7 +33,8 @@ export const Header = () => (
 							<li><CustomMenuLink to='/contact' label="contact"/></li>
 							<li><CustomMenuLink to='/skills' label="skills"/></li>
 							<li><CustomMenuLink to='/calendar' label="ecal"/></li>
-							<li><CustomMenuLink to='/work' label="work"/></li>
+							<li><CustomMenuLink to='/work' label="work"/>
+							</li>
 							<li><CustomMenuLink to='/about' label="about"/></li>
 							<li><CustomMenuLink activeOnlyWhenExact={true} to='/' label="home"/></li>
 						</ul>

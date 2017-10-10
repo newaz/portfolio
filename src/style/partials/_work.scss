@@ -1,4 +1,41 @@
-.Work-content {
-    margin-top: 10%;
-    color: black;
+.project-list {
+    @extends %clearfix;
+    width: 100%;
+    columns: 3;
+    list-style-position: inside;
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.project-list {
+    padding: 0 1em;
+    text-align: center;
+    .project {
+        margin-bottom: 5px;
+    }
+}
+
+.project-caption {
+    margin-top: 0.5em;
+    font-size: 20px;
+}
+
+.project-tags {
+    margin-left: 1em;
+    li {
+        display: inline;
+        a {
+            color: $darkOliveGreen4;
+            &:hover {
+                color: blue;
+                transition: 0.7s;
+            }
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
 }
