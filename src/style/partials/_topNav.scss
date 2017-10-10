@@ -1,3 +1,11 @@
+li.universal-blog a {
+    text-align: left;
+    float: left;
+    font-family: 'Inconsolata', monospace;
+    margin-left: 10px;
+    color: $darkOliveGreen1;
+}
+
 nav {
     li {
         a.active {

@@ -5,7 +5,6 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
-
 const TARGET_ENV = process.env.npm_lifecycle_event === 'build' ? 'production' : 'development';
 
 if(TARGET_ENV === 'production') {

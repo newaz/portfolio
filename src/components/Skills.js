@@ -10,7 +10,6 @@ export const Skills = () => {
 				<li className="ability-sass">Sass</li>
 				<li className="ability-javascript">JavaScript</li>
 				<li className="ability-react">React</li>
-				<li className="ability-webpack">Webpack</li>
 				<li className="ability-npm">NPM</li>
 				<li className="ability-node-js">NodeJS</li>
 				<li className="ability-git">Git</li>

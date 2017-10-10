@@ -6,8 +6,6 @@ import App from './App';
 import './favicon.ico';
 import './style/style.scss';
 
-const rootElt = document.getElementById('root');
-
 ReactDOM.render(
-	<App />, rootElt
+	<App />, document.getElementById('root')
 );
