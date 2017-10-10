@@ -12,4 +12,20 @@ body {
     background-color: #fdf6e3;
     font-family: 'Inconsolata', monospace;
     color: #333;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/* Clearfix */
+
+%clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
 }

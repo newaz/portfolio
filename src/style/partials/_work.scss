@@ -1,4 +1,50 @@
 .Work-content {
-    margin-top: 10%;
+    margin: 20px auto;
     color: black;
+    width: 95%;
+}
+
+.project-list {
+    @extend %clearfix;
+    width: 100%;
+    columns: 3;
+    -moz-columns: 3;
+    list-style-position: inside;
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.project {
+    padding: 0 1em;
+    text-align: center;
+}
+
+.project-list {
+    .project {
+        margin-bottom: 15px;
+    }
+}
+
+.project-tags {
+    margin: 1em;
+    text-align: left;
+    li {
+        display: inline;
+        a {
+            color: $darkOliveGreen4;
+            &:hover {
+                color: $lightCoral;
+                transition: 0.7s;
+            }
+        }
+    }
+}
+
+.project-tags:first-child {
+    margin-top: 0;
+}
+
+.project-caption {
+    color: tomato;
 }
