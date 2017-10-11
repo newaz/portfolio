@@ -1,5 +1,5 @@
 import React from 'react';
-import {HashRouter as Router, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import {burgerToggle} from '../lib/navHelpers';
 import {Home} from './Home';
 import {About} from './About';

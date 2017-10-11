@@ -1,3 +1,5 @@
+/* Colors */
+
 $mainBlack: black;
 $mainWhite: white;
 $mainColor: red;
@@ -16,3 +18,20 @@ $hotPink2: #ee6aa7;
 $thistle-color-light: #ffe1ff;
 $thistle-color-medium: #cdb5cd;
 $thistle-color-dark: #8b7b8b;
+$plum4-color: #8b668b;
+
+/* Fonts */
+$base-font-family: 'Inconsolata', monospace;
+$base-code-font: 'Kotta One', serif;
+$base-font-size: 20px;
+$small-font-size: $base-font-size * 0.875;
+
+/* Line Heights */
+$base-line-height: 1.5;
+
+/* Spacing */
+$spacing-unit: 20px;
+
+$atSmall-600: 600px;
+$atSmall-621: 621px;
+$atMedium-800: 800px;

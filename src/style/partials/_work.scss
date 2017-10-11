@@ -2,17 +2,23 @@
     margin: 20px auto;
     color: black;
     width: 95%;
-}
-
-.project-list {
-    @extend %clearfix;
-    width: 100%;
-    columns: 3;
-    -moz-columns: 3;
-    list-style-position: inside;
-    padding: 0;
-    list-style: none;
-    margin: 0 auto;
+    .project-list {
+        @extend %clearfix;
+        width: 100%;
+        columns: 3;
+        -moz-columns: 3;
+        list-style-position: inside;
+        padding: 0;
+        list-style: none;
+        margin: 0 auto;
+        @include media-query($atMedium-900) {
+            columns: 1;
+            width: 100%;
+            li {
+                float: none;
+            }
+        }
+    }
 }
 
 .project {
