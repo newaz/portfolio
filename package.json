@@ -28,8 +28,6 @@
     "core-js": "^2.5.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-grid-gallery": "^0.4.6",
-    "react-images": "^0.5.8",
     "react-router-dom": "^4.2.2",
     "react-typist": "^1.1.1"
   },

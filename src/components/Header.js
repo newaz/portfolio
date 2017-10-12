@@ -38,6 +38,7 @@ export const Header = () => (
 							<li><CustomMenuLink activeOnlyWhenExact={true} to='/' label="home"/></li>
 						</ul>
 					</div>
+					<div className="brand"><a href="#!">maria d. campbell</a></div>
 				</nav>
 			</header>
 			<Route exact path="/" component={Home}/>
