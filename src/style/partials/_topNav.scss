@@ -7,19 +7,17 @@ nav {
 }
 /* Mobile Hambuerger Styling */
 
-.topNavNarrow {
-    background: black;
-}
-
 i.hamburger {
     display: block;
     width: 36px;
     height: 30px;
-    margin: 0 15px 15px 30px;
-    padding-top: 15px;
-    padding-bottom: 30px;
-    position: sticky;
-    left: 100vw;
+    //margin: 0 15px 15px 30px;
+    //padding-top: -40px;
+    //padding-bottom: 30px;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    //left: 100vw;
     cursor: pointer;
     z-index: 99999;
 }
@@ -59,7 +57,6 @@ i.hamburger div.line {
 .topWideUl {
     li {
         color: white;
-        text-decoration: none;
         padding: 0 6px;
         height: 20px;
         a.active {
@@ -85,10 +82,10 @@ i.hamburger div.line {
     height: 0;
     transition: height 0.5s;
     overflow-y: visible;
-    position: sticky;
+    position: fixed;
     opacity: 0;
     z-index: 1;
-    transition: background 0.5s ease-in-out, opacity 0.5s;
+    transition: height 0.5s ease-in-out, opacity 0.5s;
     border-bottom: 1px solid black;
     background: transparent;
     i {
@@ -110,18 +107,18 @@ i.hamburger div.line {
 .topNarrowLinks {
     &.show {
         opacity: 1;
-        transition: background 0.5s ease-in-out, visibility 0.5s;
+        transition: height 0.5s ease-in-out, visibility 0.5s;
         display: block !important;
-        height: auto;
+        height: 100vh;
         margin: 0 auto;
         padding-bottom: 12px;
+        padding-top: 90px;
         background: black;
         li {
             list-style-type: none;
             padding: 6px;
             font-size: 20px;
             a {
-                text-decoration: none;
                 color: white;
             }
             a:hover {
@@ -136,18 +133,16 @@ i.hamburger div.line {
 
 .active {
     color: $darkOliveGreen1;
+    cursor: pointer;
 }
 
-/* User Agent Style Sheet Styling for Nav Links on transition to opacity 0 */
-a:-webkit-any-link {
-    color: white;
-    text-decoration: none;
-}
 /* End User Agent Stylesheet Styling */
 
 /* Wider Screens Styling > 675px */
 
 nav {
+    background: black;
+    height: 70px;
     @include media-query($content-width-901) {
         .topNavWide {
             display: block;
@@ -160,7 +155,6 @@ nav {
                 font-size: 20px;
                 a {
                     color: white;
-                    text-decoration: none;
                     display: block;
                     .active {
                         color: $darkOliveGreen1;
@@ -183,12 +177,15 @@ nav {
 
 /* Brand Styling */
 
-.brand {
+div.brand {
     float: left;
-    margin-top: -50px;
+    margin-top: 10px;
     margin-left: 30px;
     font-size: $base-font-size;
     a {
         color: $lightPink;
+    }
+    @include media-query($content-width-901) {
+        margin-top: -50px;
     }
 }

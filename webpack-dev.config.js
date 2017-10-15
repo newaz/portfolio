@@ -45,13 +45,13 @@ module.exports = {
 				}],
 			},
 			{
-				test: /\.(pdf|jpg|png|gif|svg|ico)$/,
+				test: /\.(jpg|png|gif|svg|pdf|ico)$/,
 				use: [
 					{
-						loader: 'url-loader',
+						loader: 'file-loader',
 						options: {
-							limit: 100000
-						}
+							name: '[path][name]-[hash:8].[ext]'
+						},
 					},
 				]
 			},

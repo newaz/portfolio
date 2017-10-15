@@ -1,11 +1,15 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 html, body {
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -13,11 +17,18 @@ body {
     font-family: 'Inconsolata', monospace;
     color: #333;
     font-weight: 300;
+    text-rendering: optimizeLegibility;
+    font-smoothing: antialiased;
 }
 
 img {
     max-width: 100%;
     vertical-align: middle;
+}
+
+// declaring this in _global._scss takes care of Firefox bug re <a> text decoration
+a {
+    text-decoration: none;
 }
 
 /* Clearfix */

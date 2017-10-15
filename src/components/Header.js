@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import {burgerToggle} from '../lib/navHelpers';
 import {Home} from './Home';
 import {About} from './About';
-import {Work} from './Work';
+import Work from './Work';
 import {Calendar} from './Calendar';
 import {Skills} from './Skills';
 import {Contact} from './Contact';
@@ -49,9 +49,9 @@ export const Header = () => (
 			<Route path="/contact" component={Contact}/>
 		</div>
 	</Router>
-)
+);
 
-const CustomMenuLink = ({ label, to, activeOnlyWhenExact }) => (
+export const CustomMenuLink = ({ label, to, activeOnlyWhenExact }) => (
 	<Route path={to} exact={activeOnlyWhenExact} children={({ match }) => (
 		<div className={match ? 'active' : ''}>
 			{match ? label : ''}<Link to={to}>{label}</Link>
