@@ -332,6 +332,10 @@ export const TravelAgencySite = () => (
 		<img src={travelAgencySite} />
 		<div className="travel-markdown">
 			<Markdown source={travelInput1} />
+			<div className="meta">
+				<div className="post-date-meta">posted on</div>
+				<div className="pub-date-meta">october 10, 2016</div>
+			</div>
 			<Markdown source={travelInput2} />
 			<Markdown source={travelInput3} />
 			<Markdown source={travelInput4} />

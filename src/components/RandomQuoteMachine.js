@@ -123,6 +123,10 @@ export const RandomQuoteMachine = () => (
 		<img src={randomQuoteMachine} />
 		<div className="quote-markdown">
 			<Markdown source={quoteInput1} />
+			<div className="meta">
+				<div className="post-date-meta">posted on</div>
+				<div className="pub-date-meta">october 10, 2016</div>
+			</div>
 			<Markdown source={quoteInput2} />
 			<Markdown source={quoteInput3} />
 			<Markdown source={quoteInput4} />

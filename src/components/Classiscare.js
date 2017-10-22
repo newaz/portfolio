@@ -39,6 +39,10 @@ export const Classiscare = () => (
 		<img src={classiscare} />
 		<div className="classiscare-markdown">
 			<Markdown source={classiscareInput1} />
+			<div className="meta">
+				<div className="post-date-meta">posted on</div>
+				<div className="pub-date-meta">feb 13, 2016</div>
+			</div>
 			<Markdown source={classiscareInput2} />
 			<Markdown source={classiscareInput3} />
 			<Markdown source={classiscareInput4} />

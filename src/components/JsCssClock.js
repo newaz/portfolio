@@ -148,6 +148,10 @@ export const JsCssClock = () => (
 		<img src={jsCssClock} />
 		<div className="clock-markdown">
 			<Markdown source={clockInput1} />
+			<div className="meta">
+				<div className="post-date-meta">posted on</div>
+				<div className="pub-date-meta">dec 27, 2016</div>
+			</div>
 			<Markdown source={clockInput2} />
 			<Markdown source={clockInput3} />
 			<Markdown source={clockInput4} />

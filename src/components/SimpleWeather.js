@@ -139,6 +139,10 @@ export const SimpleWeather = () => (
 		<img src={simpleWeather} />
 		<div className="weather-markdown">
 			<Markdown source={weatherInput1} />
+			<div className="meta">
+				<div className="post-date-meta">posted on</div>
+				<div className="pub-date-meta">october 30, 2016</div>
+			</div>
 			<Markdown source={weatherInput2} />
 			<Markdown source={weatherInput3} />
 			<Markdown source={weatherInput4} />
