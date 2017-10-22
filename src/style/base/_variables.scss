@@ -1,5 +1,7 @@
 /* Colors */
 
+$mainBackground: #fdf6e3;
+
 $mainBlack: black;
 $mainWhite: white;
 $mainColor: red;
@@ -11,15 +13,19 @@ $darkOliveGreen4:#6e8b3d;
 $lightCoral: #f08080;
 
 $lightPink: #ffb6c1;
+$deepPink4: #8b0a50;
 
 $dodgerBlue3: #1874cd;
 $dodgerBlue4: #104e8b;
 
 $hotPink2: #ee6aa7;
+$hotPink3: #cd6090;
 $thistle-color-light: #ffe1ff;
 $thistle-color-medium: #cdb5cd;
 $thistle-color-dark: #8b7b8b;
 $plum4-color: #8b668b;
+$tan1: #ffa54f;
+$tomato1: #ff6347;
 
 /* Fonts */
 $base-font-family: 'Inconsolata', monospace;
@@ -36,3 +42,10 @@ $spacing-unit: 20px;
 $atSmall-600: 600px;
 $atSmall-621: 621px;
 $atMedium-800: 800px;
+
+/* Gradient Bar Variables */
+
+$blue-color: #92b5bd;
+$yellow-color: #ede24e;
+$red-color: #df6d59;
+$purple-color: #6b2339;

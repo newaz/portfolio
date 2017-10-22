@@ -3,22 +3,17 @@
     padding: 0;
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    width: 100%;
-}
-
 body {
-    background-color: #fdf6e3;
+    background-color: $mainBackground;
     font-family: 'Inconsolata', monospace;
-    color: #333;
     font-weight: 300;
-    text-rendering: optimizeLegibility;
-    font-smoothing: antialiased;
+    letter-spacing: 0.1em;
+}
+
+.base {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
 }
 
 img {
@@ -29,6 +24,10 @@ img {
 // declaring this in _global._scss takes care of Firefox bug re <a> text decoration
 a {
     text-decoration: none;
+}
+
+.active {
+    cursor: pointer;
 }
 
 /* Clearfix */
