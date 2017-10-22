@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import {Header} from './components/Header';
+import {Navigation} from './components/Navigation';
 import {Footer} from './components/Footer';
 
-class App extends Component {
-	render() {
-		return (
-			<div className="App Site">
-				<div className="Site-content">
-					<Header />
-				</div>
+export const App = () => {
+	return (
+		<div className="App Site">
+			<div className="Site-content">
+				<Navigation />
+			</div>
+			<div>
 				<Footer />
 			</div>
-		);
-	}
+		</div>
+	);
 }
-
 export default App;

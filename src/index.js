@@ -7,5 +7,6 @@ import './favicon.ico';
 import './style/style.scss';
 
 ReactDOM.render(
-	<App />, document.getElementById('root')
+	<App />,
+	document.getElementById('root')
 );

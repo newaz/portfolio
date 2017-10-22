@@ -1,7 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
 const htmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const port = process.env.envPORT || 3000;
 
 const TARGET_ENV = process.env.npm_lifecycle_event === 'build' ? 'production' : 'development';
@@ -11,7 +10,7 @@ if(TARGET_ENV === 'development') {
 }
 
 const VENDOR_LIBS = [
-	'react', 'react-dom', 'react-router-dom', 'prop-types'
+	'core-js', 'highlight.js', 'react-lowlight', 'react-markdown', 'react-typist', 'react', 'react-dom', 'react-router-dom', 'prop-types'
 ];
 
 module.exports = {
@@ -42,14 +41,19 @@ module.exports = {
 				}, {
 					loader: 'css-loader'
 				}, {
+					loader: 'postcss-loader'
+				}, {
 					loader:'sass-loader'
 				}],
 			},
 			{
-				test: /\.(pdf|jpg|png|gif|svg|ico)$/,
+				test: /\.(jpg|png|gif|svg|pdf|ico)$/,
 				use: [
 					{
-						loader: 'url-loader'
+						loader: 'url-loader',
+						options: {
+							limit: 100000
+						},
 					},
 				]
 			},
