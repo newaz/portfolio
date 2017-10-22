@@ -1,9 +1,12 @@
 /* Ability */
 .Skills-content {
-    margin: 0 auto;
+    margin: 130px auto 60px;
     width: 75%;
     color: $mainBlack;
     text-transform: lowercase;
+    @include media-query($atMediumSmall) {
+		font-size: 20px;
+	}
 }
 
 .abilities {
@@ -29,7 +32,7 @@
     }
     &:before {
         top: 0.5em;
-        margin-left: -2em;
+        margin-left: -2.3em;
         text-align: right;
         color: $darkOliveGreen1;
     }
@@ -40,7 +43,14 @@
         width: 0;
         background: $lightCoral;
         z-index: -1;
-        padding-right: 10px;
+        //padding-right: 0;
+    }
+}
+
+[class^="ability-digital-photography"],
+[class^="ability-keynote"] {
+    &:before {
+        margin-left: -2.8em;
     }
 }
 
