@@ -10,7 +10,7 @@ if(TARGET_ENV === 'development') {
 }
 
 const VENDOR_LIBS = [
-	'react', 'react-dom', 'react-router-dom', 'prop-types'
+	'core-js', 'highlight.js', 'react-lowlight', 'react-markdown', 'react-typist', 'react', 'react-dom', 'react-router-dom', 'prop-types'
 ];
 
 module.exports = {
@@ -41,6 +41,8 @@ module.exports = {
 				}, {
 					loader: 'css-loader'
 				}, {
+					loader: 'postcss-loader'
+				}, {
 					loader:'sass-loader'
 				}],
 			},
@@ -48,9 +50,9 @@ module.exports = {
 				test: /\.(jpg|png|gif|svg|pdf|ico)$/,
 				use: [
 					{
-						loader: 'file-loader',
+						loader: 'url-loader',
 						options: {
-							name: '[path][name]-[hash:8].[ext]'
+							limit: 100000
 						},
 					},
 				]

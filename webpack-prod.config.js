@@ -12,7 +12,7 @@ if(TARGET_ENV === 'production') {
 }
 
 const VENDOR_LIBS = [
-	'react', 'react-dom', 'react-router-dom', 'prop-types'
+	'core-js', 'highlight.js', 'react-lowlight', 'react-markdown', 'react-typist', 'react', 'react-dom', 'react-router-dom', 'prop-types'
 ];
 
 module.exports = {
@@ -42,6 +42,8 @@ module.exports = {
 					fallback: 'style-loader',
 					use: [{
 						loader: 'css-loader'
+					}, {
+						loader: 'postcss-loader'
 					}, {
 						loader:'sass-loader'
 					}],
