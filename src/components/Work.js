@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import {HashRouter, Switch, Route, Link} from 'react-router-dom';
 import {LocalStorage} from './LocalStorage';
 import {RockinSynth} from './RockinSynth';
 import {JsCssClock} from './JsCssClock';
@@ -12,7 +12,7 @@ import {Classiscare} from './Classiscare';
 
 export const Work = () => {
 	return (
-		<Router>
+		<HashRouter basename="/portfolio-react">
 			<div className="Work-content">
 				<h2>projects</h2>
 				<ul className="work-nav">
@@ -38,7 +38,7 @@ export const Work = () => {
 					<Route path='/classiscare' component={Classiscare}/>
 				</Switch>
 			</div>
-		</Router>
+		</HashRouter>
 	);
 }
 

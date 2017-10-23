@@ -11,7 +11,7 @@ import {Contact} from './Contact';
 import {Articles} from './Articles';
 
 export const Navigation = () => (
-	<HashRouter basename="/">
+	<HashRouter basename="/portfolio-react">
 		<div className="nav-container">
 			<div className="hamburger" onClick={burgerToggle}>
 				<div className="line"></div>
