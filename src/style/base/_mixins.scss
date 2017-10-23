@@ -1,9 +1,0 @@
-$atSmall: '(min-width: 675px)';
-$atMediumSmall: '(min-width: 740px)';
-$content-width-901: '(min-width: 901px)';
-
-@mixin media-query($media) {
-    @media all and #{$media} {
-        @content;
-    }
-}
