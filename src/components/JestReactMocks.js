@@ -73,11 +73,11 @@ const jestInput13 = "**telated resources:**"
 
 const jestInput14 = "[React workflows without Create React App](https://interglobalmedia.github.io/react-workflow-presentation/)"
 
-const jestInput15 = "[Jest and webpack](https://facebook.github.io/jest/docs/en/webpack.html)"
+const jestInput15 = "[jest and webpack](https://facebook.github.io/jest/docs/en/webpack.html)"
 
-const jestInput16 = "[Handling Static Assets with Jest](https://facebook.github.io/jest/docs/en/webpack.html#content)"
+const jestInput16 = "[handling static assets with jest](https://facebook.github.io/jest/docs/en/webpack.html#content)"
 
-const jestInput17 = "[Testing React Apps With Jest](https://facebook.github.io/jest/docs/en/tutorial-react.html#content)"
+const jestInput17 = "[testing react apps with jest](https://facebook.github.io/jest/docs/en/tutorial-react.html#content)"
 
 export const JestReactMocks = () => (
 	<div className="jest-content">

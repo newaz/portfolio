@@ -3,6 +3,8 @@ import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 
 import {JestReactMocks} from './JestReactMocks';
 import {FlexboxStickyFooterReact} from './FlexboxStickyFooterReact';
+import {ImportingImagesReact} from './ImportingImagesReact';
+import {FirstPresentation} from './FirstPresentation';
 
 export const Articles = () => {
 	return (
@@ -12,10 +14,14 @@ export const Articles = () => {
 				<ul className="articles-nav">
 					<CustomLink to='/jest-react-mocks' activeClassName='active' label='jest, react, and mocks'/>
 					<CustomLink to='/flexbox-sticky-footer-react' activeClassName='active' label='flexbox, sticky footer, and react'/>
+					<CustomLink to='/importing-images-react' activeClassName='active' label='importing images in react'/>
+					<CustomLink to='/my-first-presentation' activeClassName='active' label='my first presentation'/>
 				</ul>
 				<Switch>
 					<Route path='/jest-react-mocks' component={JestReactMocks}/>
 					<Route path='/flexbox-sticky-footer-react' component={FlexboxStickyFooterReact}/>
+					<Route path='/importing-images-react' component={ImportingImagesReact}/>
+					<Route path='/my-first-presentation' component={FirstPresentation}/>
 				</Switch>
 			</div>
 		</Router>

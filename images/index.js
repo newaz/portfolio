@@ -25,3 +25,5 @@ export classiscare from '../../images/work/classiscare.jpg';
 export reactJest from '../../images/articles/reactJest.jpg';
 export jestReact from '../../images/articles/jestReact.jpg';
 export stickyFooter from '../../images/articles/stickyFooter.jpg';
+export importingImagesReact from '../../images/articles/importingImagesReact.jpg';
+export reactWorkflows from '../../images/articles/reactWorkflows.jpg';

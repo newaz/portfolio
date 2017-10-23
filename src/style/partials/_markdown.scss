@@ -8,7 +8,9 @@
 .surreal-markdown,
 .classiscare-markdown,
 .jest-markdown,
-.sticky-markdown {
+.sticky-markdown,
+.images-markdown,
+.presentation-markdown {
     font-size: 16px;
     @include media-query($atMediumSmall) {
         font-size: 18px;

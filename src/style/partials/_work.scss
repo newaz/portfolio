@@ -16,9 +16,12 @@
 
 .work-nav {
 	list-style-type: none;
-	margin: 60px auto;
+	margin: 50px auto;
 	text-align: center;
 	font-size: 18px;
+	overflow-y: scroll;
+    height: 130px;
+    width: 90%;
 	@include media-query($atMediumSmall) {
 		font-size: 20px;
 	}
