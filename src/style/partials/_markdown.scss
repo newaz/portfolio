@@ -6,7 +6,11 @@
 .quote-markdown,
 .wiki-markdown,
 .surreal-markdown,
-.classiscare-markdown {
+.classiscare-markdown,
+.jest-markdown,
+.sticky-markdown,
+.images-markdown,
+.presentation-markdown {
     font-size: 16px;
     @include media-query($atMediumSmall) {
         font-size: 18px;
@@ -70,4 +74,19 @@ blockquote {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 20px;
+}
+
+/* Projects Meta Styling */
+
+/* Wikipedia Viewer */
+
+.meta {
+    width: 90%;
+    margin: 12px auto;
+    text-align: center;
+}
+
+.post-date-meta {
+    font-style: italic;
+    color: $hotPink3;
 }

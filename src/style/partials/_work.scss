@@ -1,6 +1,7 @@
 .Work-content {
 	color: $mainBlack;
 	max-width: 90%;
+	max-width: 1400px;
 	margin: 130px auto 60px;
 	h2 {
 		font-size: 28px;
@@ -15,9 +16,12 @@
 
 .work-nav {
 	list-style-type: none;
-	margin: 60px auto;
+	margin: 50px auto;
 	text-align: center;
 	font-size: 18px;
+	overflow-y: scroll;
+    height: 130px;
+    width: 90%;
 	@include media-query($atMediumSmall) {
 		font-size: 20px;
 	}
@@ -55,6 +59,8 @@
 .classiscare-content {
 	text-align: left;
 	margin: 0 auto;
+	width: 90%;
+	max-width: 1400px;
 	h2 {
 		text-align: center;
 		margin-top: 40px;

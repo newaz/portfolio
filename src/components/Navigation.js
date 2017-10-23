@@ -50,7 +50,7 @@ export const Navigation = () => (
 						<li><NavLink activeClassName='active' activeStyle={{
 							color: '#cd6090' }} exact to='/articles'>articles</NavLink></li>
 						<li><NavLink activeClassName='active' activeStyle={{
-							color: '#cd6090' }} exact to='/calendar'>calendar</NavLink></li>
+							color: '#cd6090' }} exact to='/calendar'>ecal</NavLink></li>
 						<li><NavLink activeClassName='active' activeStyle={{
 							color: '#cd6090' }} exact to='/skills'>skills</NavLink></li>
 						<li><NavLink activeClassName='active' activeStyle={{

@@ -41,6 +41,10 @@ export const RockinSynth = () => (
 		<img src={rockinSynth} />
 		<div className="synth-markdown">
 			<Markdown source={rockinInput1} />
+			<div className="meta">
+				<div className="post-date-meta">posted on</div>
+				<div className="pub-date-meta">dec 27, 2016</div>
+			</div>
 			<Markdown source={rockinInput2} />
 			<Markdown source={rockinInput3} />
 			<Markdown source={rockinInput4} />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Markdown from 'react-markdown';
 
 import wikipediaViewer from '../../images/work/wikipediaViewer.jpg'
@@ -11,7 +11,7 @@ const wikiInput3 = "* this was an intermediate project created for **free code c
 
 const wikiInput4 = "* as time wore on and i learned more on my own, i decided to upscale some projects, including this one. i added `modularization` and a `gulp workflow` (similar to the one described in my `simpleweather` project), and i revamped the visuals/functionality for the search bar. once you get a taste of what a `gulp workflow` does for you regarding your code and time saving, there is no going back!"
 
-const wikiInput5 = "🔎 **What i needed to make happen in this program:**"
+const wikiInput5 = "🔎 **what i needed to make happen in this program:**"
 
 const wikiInput6 = "* user inputs a search query and submits."
 
@@ -41,27 +41,27 @@ const wikiInput18 = "* making a [normal json request](http://stackoverflow.com/q
 
 const wikiInput19 = `
 	function wikiViewer() {
-        $('#searchterm').keyup(e => {
-            // query variable
-            const q = $("#searchterm").val();
-            $.getJSON("http://en.wikipedia.org/w/api.php?callback=?",
-            {
-                // srsearch param: search for all page titles (or content)
-                // that have this value. https://www.mediawiki.org/wiki/API:Search
-                srsearch: q,
-                action: "query",
-                list: "search",
-                format: "json"
-            },
-            data => {
-                const el = \`Results for <b> \${q} </b>\`;
-                $(".section").empty().append(el);
-                $.each(data.query.search, (i, item) => {
-                    $(".section").append(\`<div id='results'><a href='http://en.wikipedia.org/wiki/' \${encodeURIComponent(item.title)}> <h4> \${item.title} </h4>  \${item.snippet} </a></div>\`);
-                    $("div #results a[href^='http://']").attr("target","_blank");
-                });
-            });
-        });
+		$('#searchterm').keyup(e => {
+			// query variable
+			const q = $("#searchterm").val();
+			$.getJSON("http://en.wikipedia.org/w/api.php?callback=?",
+			{
+				// srsearch param: search for all page titles (or content)
+				// that have this value. https://www.mediawiki.org/wiki/API:Search
+				srsearch: q,
+				action: "query",
+				list: "search",
+				format: "json"
+			},
+			data => {
+				const el = \`Results for <b> \${q} </b>\`;
+				$(".section").empty().append(el);
+				$.each(data.query.search, (i, item) => {
+					$(".section").append(\`<div id='results'><a href='http://en.wikipedia.org/wiki/' \${encodeURIComponent(item.title)}> <h4> \${item.title} </h4>  \${item.snippet} </a></div>\`);
+					$("div #results a[href^='http://']").attr("target","_blank");
+				});
+			});
+		});
 	}`
 
 const wikiInput20 = "* **[same-origin policy:](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)** restricts how a document or script loaded from one origin can interact with a resource from another origin. it is a critical security mechanism for isolating potentially malicious documents."
@@ -72,13 +72,13 @@ const wikiInput22 = `
 	const xhr = new XMLHttpRequest();
 
 	xhr.onreadystatechange = () => {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            // success
-        };
-    };
+		if (xhr.readyState === 4 && xhr.status === 200) {
+			// success
+		};
+	};
 
-    xhr.open("GET", "somewhere.php", true);
-    xhr.send();`
+	xhr.open("GET", "somewhere.php", true);
+	xhr.send();`
 
 const wikiInput23 = "* instead, i used the `$.JSON ({})` in the `json format` to circumvent `same-origin policy`. for example, you are not allowed to make `AJAX requests` to a webpage perceived to be on a different server by the browser."
 
@@ -86,33 +86,33 @@ const wikiInput24 = "* the difference between a `JSON` response and a `JSONP` re
 
 const wikiInput25 = `
 	$.getJSON("http://en.wikipedia.org/w/api.php?callback=?",
-    {
-        // srsearch param: search for all page titles (or content)
-        // that have this value. https://www.mediawiki.org/wiki/API:Search
-        srsearch: q,
-        action: "query",
-        list: "search",
-        format: "json"
-    },`
+	{
+		// srsearch param: search for all page titles (or content)
+		// that have this value. https://www.mediawiki.org/wiki/API:Search
+		srsearch: q,
+		action: "query",
+		list: "search",
+		format: "json"
+	},`
 
 const wikiInput26 = "* **JSON:**"
 
 const wikiInput27 = `
 	{
-        "name": "wikipedia-viewer",
-        "version": "0.0.2",
-        "description": "A Wikipedia Search application",
-        "main": "gulpfile.js",
-        "scripts": {
-            "styles": "gulp styles",
-            "watch": "gulp watch",
-            "webpack": "webpack",
-            "scripts": "gulp scripts",
-            "modernizr": "gulp modernizr",
-            "build": "gulp build",
-            "previewDist": "gulp previewDist",
-            "deploy": "gulp deploy"
-	    },`
+		"name": "wikipedia-viewer",
+		"version": "0.0.2",
+		"description": "A Wikipedia Search application",
+		"main": "gulpfile.js",
+		"scripts": {
+			"styles": "gulp styles",
+			"watch": "gulp watch",
+			"webpack": "webpack",
+			"scripts": "gulp scripts",
+			"modernizr": "gulp modernizr",
+			"build": "gulp build",
+			"previewDist": "gulp previewDist",
+			"deploy": "gulp deploy"
+		},`
 
 const wikiInput28 = "* same as in your `package.json` file when you `install` and `use` `npm` in your workflows."
 
@@ -124,13 +124,13 @@ const wikiInput31 = "* then i had to actually place the data into some `html` an
 
 const wikiInput32 = `
 	}, data => {
-        const el = \`Results for <b> \${q} </b>\`;
-        $(".section").empty().append(el);
-        $.each(data.query.search, (i, item) => {
-            $(".section").append(\`<div id='results'><a href='http://en.wikipedia.org/wiki/\${item.title}' \${encodeURIComponent(item.title)}> <h4> \${item.title} </h4>  \${item.snippet} </a></div>\`);
-            $("div #results a[href^='http://']").attr("target", "_blank");
-        });
-    });`
+		const el = \`Results for <b> \${q} </b>\`;
+		$(".section").empty().append(el);
+		$.each(data.query.search, (i, item) => {
+			$(".section").append(\`<div id='results'><a href='http://en.wikipedia.org/wiki/\${item.title}' \${encodeURIComponent(item.title)}> <h4> \${item.title} </h4>  \${item.snippet} </a></div>\`);
+			$("div #results a[href^='http://']").attr("target", "_blank");
+		});
+	});`
 
 const wikiInput33 = "* `$('.section').empty()` empties `<div class='section'></div>` where the search results reside. `.append(el)` refers to the value of `el`, `Results for <b> ${q} </b>`. this is automatically appended whenever someone types a keyword in the search bar."
 
@@ -142,15 +142,15 @@ const wikiInput36 = "* the next step was to add a search bar (of course!). i did
 
 const wikiInput37 = `
 	function searchbarAnimate() {
-        $('#new_search').on('focus', function() {
-            $(this).parent('label').addClass('active');
-        });
-        $('#new_search').on('blur', function() {
-            if($(this).val().length === 0) {
-                $(this).parent('label').removeClass('active');
-            }
-        });
-    }`
+		$('#new_search').on('focus', function() {
+			$(this).parent('label').addClass('active');
+		});
+		$('#new_search').on('blur', function() {
+			if($(this).val().length === 0) {
+				$(this).parent('label').removeClass('active');
+			}
+		});
+	}`
 
 const wikiInput38 = "* this code resides in the `searchbarAnimate.js` module."
 
@@ -162,76 +162,82 @@ const wikiInput41 = "[view wikipedia-viewer on github](http://interglobalmedia.g
 
 const wikiInput42 = "[source code](https://github.com/interglobalmedia/wikipedia-viewer)"
 
-export const WikipediaViewer = () => (
-	<div className="wiki-content">
-		<h2>wikipedia viewer</h2>
-		<img src={wikipediaViewer} />
-		<div className="wiki-markdown">
-			<Markdown source={wikiInput1} />
-			<Markdown source={wikiInput2} />
-			<Markdown source={wikiInput3} />
-			<Markdown source={wikiInput4} />
-			<Markdown source={wikiInput5} />
-			<Markdown source={wikiInput6} />
-			<Markdown source={wikiInput7} />
-			<Markdown source={wikiInput8} />
-			<Markdown source={wikiInput9} />
-			<Markdown source={wikiInput10} />
-			<Markdown source={wikiInput11} />
-			<Markdown source={wikiInput12} />
-			<Markdown source={wikiInput13} />
-			<Markdown source={wikiInput14} />
-			<Markdown source={wikiInput15} />
-			<Markdown source={wikiInput16} />
-			<Markdown source={wikiInput17} />
-			<Markdown source={wikiInput18} />
-			<br />
-			<code>
-				<Markdown source={wikiInput19} />
-			</code>
-			<Markdown source={wikiInput20} />
-			<Markdown source={wikiInput21} />
-			<Markdown source={wikiInput22} />
-			<Markdown source={wikiInput23} />
-			<Markdown source={wikiInput24} />
-			<br />
-			<code>
-				<Markdown source={wikiInput25} />
+export const WikipediaViewer = () => {
+	return (
+		<div className="wiki-content">
+			<h2>wikipedia viewer</h2>
+			<img src={wikipediaViewer} />
+			<div className="wiki-markdown">
+				<Markdown source={wikiInput1} />
+				<div className="meta">
+					<div className="post-date-meta">posted on</div>
+					<div className="pub-date-meta">oct 9, 2016</div>
+				</div>
+				<Markdown source={wikiInput2} />
+				<Markdown source={wikiInput3} />
+				<Markdown source={wikiInput4} />
+				<Markdown source={wikiInput5} />
+				<Markdown source={wikiInput6} />
+				<Markdown source={wikiInput7} />
+				<Markdown source={wikiInput8} />
+				<Markdown source={wikiInput9} />
+				<Markdown source={wikiInput10} />
+				<Markdown source={wikiInput11} />
+				<Markdown source={wikiInput12} />
+				<Markdown source={wikiInput13} />
+				<Markdown source={wikiInput14} />
+				<Markdown source={wikiInput15} />
+				<Markdown source={wikiInput16} />
+				<Markdown source={wikiInput17} />
+				<Markdown source={wikiInput18} />
 				<br />
-			</code>
-			<br />
-			<code>
-				<Markdown source={wikiInput26} />
-			</code>
-			<br />
-			<br />
-			<code>
-				<Markdown source={wikiInput27} />
-			</code>
-			<br />
-			<Markdown source={wikiInput28} />
-			<Markdown source={wikiInput29} />
-			<Markdown source={wikiInput30} />
-			<Markdown source={wikiInput31} />
-			<br />
-			<code>
-				<Markdown source={wikiInput32} />
-			</code>
-			<br />
-			<Markdown source={wikiInput33} />
-			<Markdown source={wikiInput34} />
-			<Markdown source={wikiInput35} />
-			<Markdown source={wikiInput36} />
-			<br />
-			<code>
-				<Markdown source={wikiInput37} />
-			</code>
-			<br />
-			<Markdown source={wikiInput38} />
-			<Markdown source={wikiInput39} />
-			<Markdown source={wikiInput40} />
-			<Markdown source={wikiInput41} />
-			<Markdown source={wikiInput42} />
+				<code>
+					<Markdown source={wikiInput19} />
+				</code>
+				<Markdown source={wikiInput20} />
+				<Markdown source={wikiInput21} />
+				<Markdown source={wikiInput22} />
+				<Markdown source={wikiInput23} />
+				<Markdown source={wikiInput24} />
+				<br />
+				<code>
+					<Markdown source={wikiInput25} />
+					<br />
+				</code>
+				<br />
+				<code>
+					<Markdown source={wikiInput26} />
+				</code>
+				<br />
+				<br />
+				<code>
+					<Markdown source={wikiInput27} />
+				</code>
+				<br />
+				<Markdown source={wikiInput28} />
+				<Markdown source={wikiInput29} />
+				<Markdown source={wikiInput30} />
+				<Markdown source={wikiInput31} />
+				<br />
+				<code>
+					<Markdown source={wikiInput32} />
+				</code>
+				<br />
+				<Markdown source={wikiInput33} />
+				<Markdown source={wikiInput34} />
+				<Markdown source={wikiInput35} />
+				<Markdown source={wikiInput36} />
+				<br />
+				<code>
+					<Markdown source={wikiInput37} />
+				</code>
+				<br />
+				<Markdown source={wikiInput38} />
+				<Markdown source={wikiInput39} />
+				<Markdown source={wikiInput40} />
+				<Markdown source={wikiInput41} />
+				<Markdown source={wikiInput42} />
+			</div>
 		</div>
-	</div>
-);
+	);
+}

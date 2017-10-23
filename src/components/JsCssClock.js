@@ -2,9 +2,6 @@ import React from 'react';
 import Markdown from 'react-markdown';
 import Lowlight from 'react-lowlight';
 
-import js from 'highlight.js/lib/languages/javascript';
-import css from 'highlight.js/lib/languages/css';
-
 import jsCssClock from '../../images/work/jsCssClock.jpg'
 
 const clockInput1 = "## js css clock"
@@ -148,6 +145,10 @@ export const JsCssClock = () => (
 		<img src={jsCssClock} />
 		<div className="clock-markdown">
 			<Markdown source={clockInput1} />
+			<div className="meta">
+				<div className="post-date-meta">posted on</div>
+				<div className="pub-date-meta">dec 27, 2016</div>
+			</div>
 			<Markdown source={clockInput2} />
 			<Markdown source={clockInput3} />
 			<Markdown source={clockInput4} />

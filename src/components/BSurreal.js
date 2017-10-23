@@ -43,6 +43,10 @@ export const BSurreal = () => (
 		<img src={bsurreal} />
 		<div className="surreal-markdown">
 			<Markdown source={surrealInput1} />
+			<div className="meta">
+				<div className="post-date-meta">posted on</div>
+				<div className="pub-date-meta">mar 4, 2016</div>
+			</div>
 			<Markdown source={surrealInput2} />
 			<Markdown source={surrealInput3} />
 			<Markdown source={surrealInput4} />

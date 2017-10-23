@@ -26,6 +26,10 @@ export const LocalStorage = () => (
 
 		<div className="storage-markdown">
 			<Markdown source={storageInput1} />
+			<div className="meta">
+				<div className="post-date-meta">posted on</div>
+				<div className="pub-date-meta">jan 18, 2016</div>
+			</div>
 			<Markdown source={storageInput2} />
 			<Markdown source={storageInput3} />
 			<Markdown source={storageInput4} />
