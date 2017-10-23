@@ -6,7 +6,9 @@
 .quote-markdown,
 .wiki-markdown,
 .surreal-markdown,
-.classiscare-markdown {
+.classiscare-markdown,
+.jest-markdown,
+.sticky-markdown {
     font-size: 16px;
     @include media-query($atMediumSmall) {
         font-size: 18px;

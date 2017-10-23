@@ -2,9 +2,6 @@ import React from 'react';
 import Markdown from 'react-markdown';
 import Lowlight from 'react-lowlight';
 
-import js from 'highlight.js/lib/languages/javascript';
-import css from 'highlight.js/lib/languages/css';
-
 import jsCssClock from '../../images/work/jsCssClock.jpg'
 
 const clockInput1 = "## js css clock"
