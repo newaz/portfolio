@@ -8,7 +8,7 @@ import {FirstPresentation} from './FirstPresentation';
 
 export const Articles = () => {
 	return (
-		<HashRouter basename="/">
+		<HashRouter basename="/articles">
 			<div className="Articles-content">
 				<h2>articles</h2>
 				<ul className="articles-nav">

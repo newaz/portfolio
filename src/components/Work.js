@@ -12,7 +12,7 @@ import {Classiscare} from './Classiscare';
 
 export const Work = () => {
 	return (
-		<HashRouter basename="/">
+		<HashRouter basename="/work">
 			<div className="Work-content">
 				<h2>projects</h2>
 				<ul className="work-nav">
