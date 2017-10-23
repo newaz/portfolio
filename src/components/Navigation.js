@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {burgerToggle} from '../lib/navHelpers';
-import {BrowserRouter as Router, NavLink, Route, Switch} from 'react-router-dom';
+import {HashRouter, NavLink, Route, Switch} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {Home} from './Home';
 import {About} from './About';
@@ -11,7 +11,7 @@ import {Contact} from './Contact';
 import {Articles} from './Articles';
 
 export const Navigation = () => (
-	<Router>
+	<HashRouter basename="/">
 		<div className="nav-container">
 			<div className="hamburger" onClick={burgerToggle}>
 				<div className="line"></div>
@@ -68,5 +68,5 @@ export const Navigation = () => (
 				<Route path='/contact' component={Contact}/>
 			</Switch>
 		</div>
-	</Router>
+	</HashRouter>
 );
