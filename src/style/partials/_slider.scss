@@ -1,0 +1,95 @@
+.siema {
+    position: relative;
+    max-width: 1400px;
+    width: 90%;
+    background-position: center center;
+    height: auto;
+    top: 0;
+    margin: 0 auto;
+    img {
+        max-width: 100%;
+    }
+    h2 {
+        color: $dodgerBlue3;
+    }
+}
+
+.article-siema {
+    background: $hotPink3;
+    position: relative;
+    max-width: 1400px;
+    width: 91%;
+    background-position: center center;
+    height: 600px;
+    top: 0;
+    margin: 0 auto 40px;
+    h2 {
+        display: block;
+        color: $mainBlack;
+    }
+    p {
+        margin: 20px auto;
+        padding: 25px;
+        font-size: 20px;
+        width: 90%;
+    }
+}
+
+.article-siema blockquote {
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+    line-height: 1.5;
+    color: $mainBlack;
+}
+
+/*Slider Button Styling */
+button:nth-of-type(1) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotateY(180deg);
+}
+
+button:nth-of-type(2) {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.prevSiema {
+    padding: 3px 6px;
+}
+
+.nextSiema {
+    padding: 6px;
+}
+
+button.nextSiema,
+button.prevSiema {
+    font-size: 48px;
+    color: $dodgerBlue3;
+    background: none;
+    top: 90px;
+}
+
+button.nextSiema2,
+button.prevSiema2 {
+    font-size: 42px;
+    top: 37.5%;
+    color: $tan1;
+    background: rgba(16, 78, 139, 0.7);
+    @include media-query($atSmall) {
+        font-size: 60px;
+        top: 37.5%;
+    }
+}
+
+.nextSiema,
+.prevSiema,
+.nextSiema2,
+.prevSiema2 {
+    outline: none;
+    cursor: pointer;
+    border: none;
+}

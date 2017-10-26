@@ -1,6 +1,7 @@
 $atSmall: '(min-width: 675px)';
 $atMediumSmall: '(min-width: 740px)';
 $content-width-901: '(min-width: 901px)';
+$content-width-801: '(min-width: 801px)';
 
 @mixin media-query($media) {
     @media all and #{$media} {
