@@ -7,7 +7,7 @@
         margin-top: 40px;
 		font-size: 28px;
         color: $mainBlack;
-		@include media-query($atMediumSmall) {
+		@media #{$min-740} {
 			font-size: 32px;
 		}
 	}
@@ -24,7 +24,7 @@
     overflow-y: scroll;
     height: 130px;
     width: 90%;
-	@include media-query($atMediumSmall) {
+	@media #{$min-740} {
 		font-size: 20px;
 	}
 }
@@ -34,6 +34,10 @@
 		margin-top: 12px;
 		a {
 			color: $dodgerBlue3;
+            &:hover, &:focus {
+				color: $darkOliveGreen4;
+				transition: 0.7s ease-out;
+			}
 		}
 	}
 }

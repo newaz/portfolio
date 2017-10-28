@@ -35,11 +35,12 @@
             color: $tomato1;
         }
 
-        a:hover {
+        a:hover, a:focus {
             color: $dodgerBlue3;
+            transition: 1s ease-out;
         }
     }
-    @include media-query($content-width-901) {
+    @media #{$min-901} {
         margin: 160px auto 60px;
     }
 }
@@ -52,6 +53,10 @@ h2.about-resources {
 a.resumeLink {
     line-height: 1.7;
     color: $darkOliveGreen4;
+    &:hover, &:focus {
+        color: $hotPink3;
+        transition: 1s ease-out;
+    }
 }
 
 .About-profile {

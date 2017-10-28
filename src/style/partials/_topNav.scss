@@ -80,6 +80,10 @@ nav.responsive-menu.show {
     margin-top: 15px;
     a {
         color: $mainBackground;
+        &:hover, &:focus {
+            color: $dodgerBlue3;
+            transition: 1s ease-out;
+        }
     }
     .brand a {
         color: $dodgerBlue3;
@@ -92,7 +96,7 @@ nav.responsive-menu.show {
             display: none !important;
         }
     }
-    @include media-query($content-width-901) {
+    @media #{$min-901} {
         display: none;
     }
 }
@@ -109,7 +113,7 @@ nav.top {
 
 div.hamburger,
 nav.responsive-menu {
-    @include media-query($content-width-901) {
+    @media #{$min-901} {
         display: none;
     }
 }
@@ -118,7 +122,7 @@ nav.responsive-menu {
 
 nav li a {
     display: block;
-    @include media-query($content-width-901) {
+    @media #{$min-901} {
         display: inline-block;
         text-decoration: none;
         display: inline-block;
@@ -127,13 +131,13 @@ nav li a {
 
 nav li {
     display: block;
-    @include media-query($content-width-901) {
+    @media #{$min-901} {
         display: inline-block;
     }
 }
 
 nav ul {
-    @include media-query($content-width-901) {
+    @media #{$min-901} {
         display: inline-block;
         float: right;
     }
@@ -144,7 +148,7 @@ nav ul {
 /* Nav Styling > 900px wide */
 
 nav.top {
-    @include media-query($content-width-901) {
+    @media #{$min-901} {
         display: block;
         position: fixed;
         top: 0;
@@ -166,6 +170,10 @@ nav.top {
     }
     a {
         color: $mainBackground;
+        &:hover, &:focus {
+            color: $dodgerBlue3;
+            transition: 1s ease-out;
+        }
     }
     .brand a {
         color: $dodgerBlue3;

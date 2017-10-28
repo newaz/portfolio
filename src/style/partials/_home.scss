@@ -1,22 +1,213 @@
 .Home-content {
-    position: relative;
-    margin: 140px auto 70px;
-    height: 100%;
-    .home-work-heading {
-        //margin-top: 40px;
-		font-size: 28px;
-        color: $mainBlack;
+    margin: 130px auto 90px;
+    width: 90%;
+    h2 {
         margin-bottom: 20px;
-		@include media-query($atMediumSmall) {
-			font-size: 32px;
-		}
-	}
-    .Articles-content {
-        margin-top: 60px;
-        margin-bottom: 0;
-        h2 {
-            margin-top: 0;
-            margin-bottom: 20px;
+    }
+}
+
+/* Featured Projects */
+
+.home-section-projects {
+    @extend %clearfix;
+    padding-top: 40px;
+    margin: 40px auto;
+    @media #{$min-901} {
+        padding-top: 60px;
+    }
+}
+
+.project-list-home {
+    background: $grey-teal-color;
+    @extend %clearfix;
+    width: 90%;
+    columns: 3;
+    -moz-columns: 3;
+    list-style-position: inside;
+    padding: 1em;
+    list-style: none;
+    margin: 0 auto;
+    @media #{$max-900} {
+        width: 90%;
+        columns: 1;
+        -moz-columns: 1;
+        margin: 0 auto;
+        padding: 1em;
+    }
+}
+
+.project {
+    text-align: center;
+    @media #{$max-900} {
+        width: 100%;
+        padding: 1em 0;
+        margin: 0 auto;
+    }
+}
+
+.project-tags {
+    margin-left: -1em;
+    font-size: 18px;
+
+    li {
+        display: inline-block;
+        a {
+            color: $darkOliveGreen4;
+            &:hover, &:focus {
+                color: $hotPink3;
+                transition: 1s ease-out;
+            }
+        }
+    }
+    @media #{$min-901} {
+        font-size: 20px;
+        padding-bottom: 6px;
+    }
+}
+
+.tag a:nth-child(1) {
+    padding-left: 12px;
+}
+
+.project-image-home {
+    margin-bottom: 1em;
+}
+
+.project-caption {
+    a {
+        color: $tomato1;
+        font-size: 18px;
+        &:hover, &:focus {
+            color: $dodgerBlue3;
+            transition: 1s ease-out;
+        }
+        @media #{$min-901} {
+            font-size: 20px;
+        }
+    }
+}
+
+/* End Featured Projects */
+
+/* Featured Posts */
+
+.home-section-articles {
+    @extend %clearfix;
+    padding-top: 40px;
+    margin: 40px auto;
+}
+
+.post, .post-read-more-link, .post-tags {
+    text-align: center;
+}
+
+.post-list-home {
+    @extend %clearfix;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    @media #{$max-900} {
+        width: 90%;
+    }
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 45%;
+    margin: 0 2.5%;
+    padding: 0 0 1em;
+    h2 {
+        padding-right: 1.5em;
+        padding-left: 1.5em;
+        font-weight: 400;
+        a {
+            color: $tomato1;
+            &:hover, &:focus {
+                color: $dodgerBlue3;
+                transition: 1s ease-out;
+            }
+        }
+
+        @media #{$min-901} {
+            padding-right: 3em;
+            padding-left: 3em;
+        }
+    }
+    p {
+        line-height: 1.5;
+        padding-right: 1.5em;
+        padding-left: 1.5em;
+        font-size: 18px;
+        @media #{$min-901} {
+            font-size: 20px;
+            padding-right: 3em;
+            padding-left: 3em;
+        }
+    }
+    @media #{$max-900} {
+        width: 100%;
+    }
+    &:nth-child(odd) {
+        clear: both;
+    }
+}
+
+.post:nth-child(1),
+.post:nth-child(3) {
+    background: $grey-teal-color;
+}
+
+.post:nth-of-type(2),
+.post:nth-of-type(4) {
+    background: $mainAntiqueWhite;
+}
+
+.post:nth-of-type(3) {
+    @media #{$min-901} {
+        background: $mainAntiqueWhite;
+    }
+}
+
+.post:nth-of-type(4) {
+    @media #{$min-901} {
+        background: $grey-teal-color;
+    }
+}
+
+.post-read-more-link {
+    margin-bottom: 25px;
+    font-size: 18px;
+    a {
+        color: $tomato1;
+        &:hover {
+            color: $dodgerBlue3;
+            transition: 1s ease-out;
+        }
+    }
+    @media #{$min-901} {
+        font-size: 20px;
+    }
+}
+
+.post-tags {
+    min-height: 50px;
+    margin-left: 0;
+    margin-bottom: -10px;
+    li {
+        display: inline;
+        font-size: 20px;
+        a {
+            color: $darkOliveGreen4;
+            &:hover, &:focus {
+                color: $hotPink3;
+                transition: 1s ease-out;
+            }
+            &:first-child {
+                margin-right: 12px;
+            }
         }
     }
 }
