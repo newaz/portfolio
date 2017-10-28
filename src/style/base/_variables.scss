@@ -1,5 +1,6 @@
 /* Colors */
 
+$mainAntiqueWhite: #faebd7;
 $mainBackground: #fdf6e3;
 
 $mainBlack: black;
@@ -17,6 +18,8 @@ $deepPink4: #8b0a50;
 
 $dodgerBlue3: #1874cd;
 $dodgerBlue4: #104e8b;
+
+$grey-teal-color: #c1cdcd;
 
 $hotPink2: #ee6aa7;
 $hotPink3: #cd6090;
@@ -43,9 +46,18 @@ $atSmall-600: 600px;
 $atSmall-621: 621px;
 $atMedium-800: 800px;
 
+/* Width of Content Area */
+
+$content-width: 1400px;
+$on-palm: 600px;
+$on-palm-20: 621px;
+$on-laptop: 800px;
+
 /* Gradient Bar Variables */
 
 $blue-color: #92b5bd;
 $yellow-color: #ede24e;
 $red-color: #df6d59;
 $purple-color: #6b2339;
+
+/* mqs */

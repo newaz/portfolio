@@ -1,5 +1,5 @@
 import React from 'react';
-import {HashRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import {HashRouter, Switch, Route, Link} from 'react-router-dom';
 
 import {JestReactMocks} from './JestReactMocks';
 import {FlexboxStickyFooterReact} from './FlexboxStickyFooterReact';
@@ -8,7 +8,7 @@ import {FirstPresentation} from './FirstPresentation';
 
 export const Articles = () => {
 	return (
-		<Router basename='/articles'>
+		<HashRouter basename='/articles'>
 			<div className="Articles-content">
 				<h2>articles</h2>
 				<ul className="articles-nav">
@@ -24,7 +24,7 @@ export const Articles = () => {
 					<Route path='/myfirstpresentation' component={FirstPresentation}/>
 				</Switch>
 			</div>
-		</Router>
+		</HashRouter>
 	);
 }
 

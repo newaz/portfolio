@@ -11,22 +11,20 @@
         margin: 40px auto 0;
         padding: 0 12px;
     }
-    li:hover, li:focus {
-        animation: stretch 2s infinite ease-in-out;
-    }
     a {
         color: $tomato1;
         font-size: 20px;
-        @include media-query($atSmall) {
+        &:hover, &:focus {
+            color: $dodgerBlue3;
+            transition: 1s ease-out;
+        }
+        @media #{$min-675} {
             font-size: 24px;
         }
     }
-    a:hover {
-        color: $dodgerBlue3;
-    }
     img {
         width: 35px;
-        @include media-query($atSmall) {
+        @media #{$min-675} {
             width: 40px;
         }
     }
@@ -45,15 +43,16 @@
 .follow h2,
 .contribute h2 {
     font-size: 24px;
-    @include media-query($atSmall) {
+    @media #{$min-675} {
         font-size: 28px;
     }
 }
 
 img.twitter:hover,
 img.github:hover,
-img.google-plus:hover {
-    animation: stretch 2s infinite ease-in-out;
+img.google-plus:hover,
+img.linkedin:hover {
+    transition: 1s ease-out;
 }
 
 img.github:hover, img.linkedin:hover {
@@ -66,9 +65,4 @@ img.github:hover {
 
 img.linkedin:hover {
     border-radius: 3px;
-}
-
-@keyframes stretch {
-    from { transform: scale(1); }
-    to { transform: scale(1.1); }
 }

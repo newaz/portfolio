@@ -8,6 +8,8 @@ body {
     font-family: 'Inconsolata', monospace;
     font-weight: 300;
     letter-spacing: 0.1em;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
 }
 
 .base {
