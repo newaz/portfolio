@@ -66,3 +66,15 @@ img.github:hover {
 img.linkedin:hover {
     border-radius: 3px;
 }
+
+.follow {
+    li:first-child {
+        display: block;
+    }
+}
+
+.contribute {
+    li:nth-child(2) {
+        display: block;
+    }
+}

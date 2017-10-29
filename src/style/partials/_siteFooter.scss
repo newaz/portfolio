@@ -10,9 +10,11 @@
         width: 100%;
         li {
             display: inline-block;
-            padding-top: 20px;
-            margin-left: 12px;
-            margin-right: 12px;
+            a {
+                padding-top: 24px;
+                margin-left: 12px;
+                margin-right: 12px;
+            }
         }
     }
 }
@@ -20,7 +22,7 @@
 .identity {
     text-align: center;
     width: 100%;
-    margin: 70px auto 0;
+    margin: 90px auto 0;
     color: $mainWhite;
     p {
         color: $mainWhite;
