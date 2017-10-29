@@ -4,6 +4,7 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const ImageminPlugin = require('imagemin-webpack-plugin');
 
 const TARGET_ENV = process.env.npm_lifecycle_event === 'build' ? 'production' : 'development';
 
@@ -92,6 +93,23 @@ module.exports = {
 			'process.env': {
 				NODE_ENV: JSON.stringify('production')
 			}
+		}),
+		new ImageminPlugin({
+			disable: false,
+			optipng: {
+				optimizationLevel: 3
+			},
+			gifsicle: {
+				optimizationLevel: 1
+			},
+			jpegtran: {
+				progressive: false
+			},
+			svgo: {
+
+			},
+			pngquant: null,
+			plugins: []
 		}),
 		new webpack.optimize.UglifyJsPlugin({
 			sourceMap: true
