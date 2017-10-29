@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import {Home} from './Home';
 import {About} from './About';
 import {Work} from './Work';
-import {Calendar} from './Calendar';
 import {Skills} from './Skills';
 import {Contact} from './Contact';
 import {Articles} from './Articles';
@@ -31,8 +30,6 @@ export const Navigation = () => (
 						<li><NavLink activeClassName='active' activeStyle={{
 							color: '#cd6090' }} exact to='/articles'>articles</NavLink></li>
 						<li><NavLink activeClassName='active' activeStyle={{
-							color: '#cd6090' }} exact to='/calendar'>ecal</NavLink></li>
-						<li><NavLink activeClassName='active' activeStyle={{
 							color: '#cd6090' }} exact to='/skills'>skills</NavLink></li>
 						<li><NavLink activeClassName='active' activeStyle={{
 							color: '#cd6090' }} exact to='/contact'>contact</NavLink></li>
@@ -50,8 +47,6 @@ export const Navigation = () => (
 						<li><NavLink activeClassName='active' activeStyle={{
 							color: '#cd6090' }} exact to='/articles'>articles</NavLink></li>
 						<li><NavLink activeClassName='active' activeStyle={{
-							color: '#cd6090' }} exact to='/calendar'>ecal</NavLink></li>
-						<li><NavLink activeClassName='active' activeStyle={{
 							color: '#cd6090' }} exact to='/skills'>skills</NavLink></li>
 						<li><NavLink activeClassName='active' activeStyle={{
 							color: '#cd6090' }} exact to='/contact'>contact</NavLink></li>
@@ -63,7 +58,6 @@ export const Navigation = () => (
 				<Route path='/about' component={About}/>
 				<Route path='/work' component={Work}/>
 				<Route path='/articles' component={Articles}/>
-				<Route path='/calendar' component={Calendar}/>
 				<Route path='/skills' component={Skills}/>
 				<Route path='/contact' component={Contact}/>
 			</Switch>
