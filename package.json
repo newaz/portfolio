@@ -26,15 +26,12 @@
   "license": "ISC",
   "dependencies": {
     "core-js": "^2.5.1",
-    "globalize": "^0.1.1",
     "highlight.js": "^9.12.0",
-    "moment": "^2.19.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-lowlight": "^1.1.1",
     "react-markdown": "^2.5.0",
     "react-router-dom": "^4.2.2",
-    "react-siema": "^1.0.1",
     "react-typist": "^1.1.1"
   },
   "devDependencies": {
