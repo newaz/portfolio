@@ -110,7 +110,7 @@ module.exports = {
         	pngquant: null,
 	    	plugins: []
 	    }),
-		new webpack.optimize.UglifyJsPlugin({
+		new UglifyJSPlugin({
 			sourceMap: true
 		})
 	],
