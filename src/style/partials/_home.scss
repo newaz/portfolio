@@ -38,42 +38,21 @@
 
 .project {
     text-align: center;
-    @media #{$max-900} {
-        width: 100%;
-        padding: 1em 0;
-        margin: 0 auto;
-    }
-}
-
-/*.project-tags {
-    margin-left: -1em;
-    font-size: 18px;
-    text-align: center;
-    li {
-        display: inline;
-        a {
+    a {
+        div.tag {
             color: $darkOliveGreen4;
+            margin-bottom: 3px;
+            font-size: 18px;
             &:hover, &:focus {
                 color: $hotPink3;
                 transition: 1s ease-out;
             }
         }
     }
-    @media #{$min-901} {
-        font-size: 20px;
-        padding-bottom: 6px;
-    }
-}*/
-
-/*.tag a:nth-child(1) {
-    padding-left: 12px;
-}*/
-
- a {
-     div.tag {
-        color: $darkOliveGreen4;
-        margin-bottom: 3px;
-        font-size: 18px;
+    @media #{$max-900} {
+        width: 100%;
+        padding: 1em 0;
+        margin: 0 auto;
     }
 }
 

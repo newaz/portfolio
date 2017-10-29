@@ -6,7 +6,8 @@ export const FeaturedPosts = () => {
 		[
 			{
 				id: 1,
-				tagName: ['flexbox', 'react'],
+				tagName1: 'flexbox',
+				tagName2: 'react',
 				linkPath: '/articles/flexboxstickyfooterreact',
 				title: 'flexbox, sticky footer, and react',
 				text: 'i came across a design challenge pretty quickly into the project. the "raised footer" issue. pages which had little or no content meant a footer which failed to stay grounded to the bottom of the page',
@@ -14,7 +15,8 @@ export const FeaturedPosts = () => {
 			},
 			{
 				id: 2,
-				tagName: ['images', 'react'],
+				tagName1: 'images',
+				tagName2:'react',
 				linkPath: '/articles/importingimagesreact',
 				title: 'importing images in react',
 				text: 'first i want to talk about what webpack tools you need in order to be able to add images to your React application. it\'s not just about what you need to do with React. if your workflow emanates from',
@@ -22,7 +24,8 @@ export const FeaturedPosts = () => {
 			},
 			{
 				id: 3,
-				tagName: ['workflows', 'react'],
+				tagName1: 'workflows',
+				tagName2: 'react',
 				linkPath: '/articles/myfirstpresentation',
 				title: 'my first presentation',
 				text: 'tonight i gave my first tech presentation (ever), and it was about creating your own React workflow without using create-react-app. i was nervous at first, but then after a minute or two, i relaxed a',
@@ -30,7 +33,8 @@ export const FeaturedPosts = () => {
 			},
 			{
 				id: 4,
-				tagName: ['jest', 'mocks'],
+				tagName1: 'jest',
+				tagName2: 'mocks',
 				linkPath: '/articles/jestreactmocks',
 				title: 'jest, react, and mocks',
 				text: 'i use facebook\'s jest to test my react applications. yesterday, i ran a test to make sure that the changes i made to my Work component passed in my portfolio react app. it did not! but as indicated in',
@@ -42,7 +46,12 @@ export const FeaturedPosts = () => {
 					<div className="post-tags">
 						<li>
 							<Link to={featuredPost.linkPath}>
-								{featuredPost.tagName}
+								{featuredPost.tagName1}
+							</Link>
+						</li>
+						<li>
+							<Link to={featuredPost.linkPath}>
+								{featuredPost.tagName2}
 							</Link>
 						</li>
 					</div>

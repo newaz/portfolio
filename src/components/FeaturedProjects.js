@@ -16,7 +16,7 @@ export const FeaturedProjects = () => {
 			},
 			{
 				id: 2,
-				tagName: ['audio', 'music'],
+				tagName: 'audio',
 				linkPath: '/work/rockinsynth',
 				src: rockinSynth,
 				projectCaption: 'rockin\' synth'
