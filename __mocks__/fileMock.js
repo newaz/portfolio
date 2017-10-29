@@ -1,1 +1,1 @@
-module.expots = 'test-file-stub';
+module.exports = 'test-file-stub';
