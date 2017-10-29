@@ -1,6 +1,6 @@
 .Home-content {
     margin: 130px auto 90px;
-    width: 90%;
+    width: 100%;
     h2 {
         margin-bottom: 20px;
     }
@@ -45,12 +45,12 @@
     }
 }
 
-.project-tags {
+/*.project-tags {
     margin-left: -1em;
     font-size: 18px;
-
+    text-align: center;
     li {
-        display: inline-block;
+        display: inline;
         a {
             color: $darkOliveGreen4;
             &:hover, &:focus {
@@ -63,14 +63,22 @@
         font-size: 20px;
         padding-bottom: 6px;
     }
-}
+}*/
 
-.tag a:nth-child(1) {
+/*.tag a:nth-child(1) {
     padding-left: 12px;
+}*/
+
+ a {
+     div.tag {
+        color: $darkOliveGreen4;
+        margin-bottom: 3px;
+        font-size: 18px;
+    }
 }
 
 .project-image-home {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 .project-caption {
