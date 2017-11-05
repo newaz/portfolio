@@ -642,7 +642,8 @@ img.linkedin:hover {
 .jest-content,
 .sticky-content,
 .images-content,
-.presentation-content {
+.presentation-content,
+.subtree-content {
   text-align: left;
   margin: 0 auto;
   width: 90%;
@@ -650,13 +651,15 @@ img.linkedin:hover {
   .jest-content h2,
   .sticky-content h2,
   .images-content h2,
-  .presentation-content h2 {
+  .presentation-content h2,
+  .subtree-content h2 {
     text-align: center;
     margin-top: 40px; }
   .jest-content img,
   .sticky-content img,
   .images-content img,
-  .presentation-content img {
+  .presentation-content img,
+  .subtree-content img {
     margin: 60px auto 0;
     background-position: center center; }
 
@@ -1150,7 +1153,8 @@ img.footerLinkedin:hover {
 .jest-markdown,
 .sticky-markdown,
 .images-markdown,
-.presentation-markdown {
+.presentation-markdown,
+.subtree-markdown {
   font-size: 16px;
   line-height: 1.6; }
   @media (min-width: 740px) {
@@ -1166,7 +1170,8 @@ img.footerLinkedin:hover {
     .jest-markdown,
     .sticky-markdown,
     .images-markdown,
-    .presentation-markdown {
+    .presentation-markdown,
+    .subtree-markdown {
       font-size: 18px; } }
   @media (min-width: 901px) {
     .storage-markdown,
@@ -1181,7 +1186,8 @@ img.footerLinkedin:hover {
     .jest-markdown,
     .sticky-markdown,
     .images-markdown,
-    .presentation-markdown {
+    .presentation-markdown,
+    .subtree-markdown {
       font-size: 20px; } }
   .storage-markdown h2,
   .synth-markdown h2,
@@ -1195,7 +1201,8 @@ img.footerLinkedin:hover {
   .jest-markdown h2,
   .sticky-markdown h2,
   .images-markdown h2,
-  .presentation-markdown h2 {
+  .presentation-markdown h2,
+  .subtree-markdown h2 {
     font-size: 24px; }
     @media (min-width: 740px) {
       .storage-markdown h2,
@@ -1210,7 +1217,8 @@ img.footerLinkedin:hover {
       .jest-markdown h2,
       .sticky-markdown h2,
       .images-markdown h2,
-      .presentation-markdown h2 {
+      .presentation-markdown h2,
+      .subtree-markdown h2 {
         font-size: 28px; } }
   .storage-markdown h3,
   .synth-markdown h3,
@@ -1224,7 +1232,8 @@ img.footerLinkedin:hover {
   .jest-markdown h3,
   .sticky-markdown h3,
   .images-markdown h3,
-  .presentation-markdown h3 {
+  .presentation-markdown h3,
+  .subtree-markdown h3 {
     font-size: 20px;
     display: block; }
     @media (min-width: 740px) {
@@ -1240,7 +1249,8 @@ img.footerLinkedin:hover {
       .jest-markdown h3,
       .sticky-markdown h3,
       .images-markdown h3,
-      .presentation-markdown h3 {
+      .presentation-markdown h3,
+      .subtree-markdown h3 {
         font-size: 24px; } }
   .storage-markdown li,
   .synth-markdown li,
@@ -1254,7 +1264,8 @@ img.footerLinkedin:hover {
   .jest-markdown li,
   .sticky-markdown li,
   .images-markdown li,
-  .presentation-markdown li {
+  .presentation-markdown li,
+  .subtree-markdown li {
     margin-top: 10px; }
   .storage-markdown a,
   .synth-markdown a,
@@ -1268,7 +1279,8 @@ img.footerLinkedin:hover {
   .jest-markdown a,
   .sticky-markdown a,
   .images-markdown a,
-  .presentation-markdown a {
+  .presentation-markdown a,
+  .subtree-markdown a {
     color: tomato; }
   .storage-markdown p,
   .synth-markdown p,
@@ -1282,7 +1294,8 @@ img.footerLinkedin:hover {
   .jest-markdown p,
   .sticky-markdown p,
   .images-markdown p,
-  .presentation-markdown p {
+  .presentation-markdown p,
+  .subtree-markdown p {
     padding: 5px 0;
     color: #333; }
   .storage-markdown strong,
@@ -1297,7 +1310,8 @@ img.footerLinkedin:hover {
   .jest-markdown strong,
   .sticky-markdown strong,
   .images-markdown strong,
-  .presentation-markdown strong {
+  .presentation-markdown strong,
+  .subtree-markdown strong {
     color: #1874cd; }
 
 code {
@@ -1340,4 +1354,4 @@ blockquote {
 .Typist .Cursor {
   display: none; }
 
-/*# sourceMappingURL=style-ad662f9b.css.map*/
+/*# sourceMappingURL=style-70263c60.css.map*/
