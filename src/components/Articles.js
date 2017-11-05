@@ -5,6 +5,7 @@ import {JestReactMocks} from './JestReactMocks';
 import {FlexboxStickyFooterReact} from './FlexboxStickyFooterReact';
 import {ImportingImagesReact} from './ImportingImagesReact';
 import {FirstPresentation} from './FirstPresentation';
+import {GhPagesGitSubtree} from './GhPagesGitSubtree';
 
 export const Articles = () => {
 	return (
@@ -16,12 +17,14 @@ export const Articles = () => {
 					<CustomLink to='/flexboxstickyfooterreact' activeClassName='active' label='flexbox, sticky footer, and react'/>
 					<CustomLink to='/importingimagesreact' activeClassName='active' label='importing images in react'/>
 					<CustomLink to='/myfirstpresentation' activeClassName='active' label='my first presentation'/>
+					<CustomLink to='/ghpagesgitsubtree' activeClassName='active' label='deploying to gh pages with git subtree'/>
 				</ul>
 				<Switch>
 					<Route path='/jestreactmocks' component={JestReactMocks}/>
 					<Route path='/flexboxstickyfooterreact' component={FlexboxStickyFooterReact}/>
 					<Route path='/importingimagesreact' component={ImportingImagesReact}/>
 					<Route path='/myfirstpresentation' component={FirstPresentation}/>
+					<Route path='/ghpagesgitsubtree' component={GhPagesGitSubtree}/>
 				</Switch>
 			</div>
 		</HashRouter>
