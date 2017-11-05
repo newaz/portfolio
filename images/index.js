@@ -27,3 +27,4 @@ export jestReact from './articles/jestReact.jpg';
 export stickyFooter from './articles/stickyFooter.jpg';
 export importingImagesReact from './articles/importingImagesReact.jpg';
 export reactWorkflows from './articles/reactWorkflows.jpg';
+export gitLogo2Color from './articles/gitLogo2Color.png.png';

@@ -10,7 +10,8 @@
 .jest-markdown,
 .sticky-markdown,
 .images-markdown,
-.presentation-markdown {
+.presentation-markdown,
+.subtree-markdown {
     font-size: 16px;
     @media #{$min-740} {
         font-size: 18px;
