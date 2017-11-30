@@ -19,11 +19,7 @@ export const About = () => {
 				</p>
 
 				<p>
-						My SPECIALTIES include <span>HTML5</span>, <span>CSS3</span>, <span>CSS Flexbox</span>, <span>JavaScript</span>, <span>ES6+</span>, <span>NPM</span>, <span>NodeJS</span>, <span>Sass</span>, <span>PostCSS</span>, <span>Gulp</span>, <span>Webpack 2+</span>, <span>Static Website Generators</span>, <span>Liquid Syntax</span>, <span>Command Line, Markdown</span>, <span>Git</span>, <span>Github</span>, <span>Creative Suite</span>, <span>"Candid Camera"</span>, <span>Keynote</span>, <span>technical writing</span>, and more.
-				</p>
-
-				<p>
-					<span>2017</span> is the year for conquering <span>React</span>, <span>MongoDB</span>, and <span>Express</span>.
+						My SPECIALTIES include <span>HTML5</span>, <span>CSS3</span>, <span>CSS Flexbox</span>, <span>CSS Modules</span>, <span>React</span>, <span>JavaScript</span>, <span>ES6+</span>, <span>NPM</span>, <span>NodeJS</span>, <span>Sass</span>, <span>PostCSS</span>, <span>Gulp</span>, <span>Webpack 2+</span>, <span>Static Website Generators</span>, <span>Liquid Syntax</span>, <span>Command Line, Markdown</span>, <span>Git</span>, <span>Github</span>, <span>Creative Suite</span>, <span>"Candid Camera"</span>, <span>Keynote</span>, <span>technical writing</span>, and more.
 				</p>
 
 				<p>
